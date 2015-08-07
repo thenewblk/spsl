@@ -1,0 +1,65 @@
+.home_flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.stained_glass {
+  display: flex;
+  flex-direction: column;
+  background: orange;
+  height: 100%;
+  .top_glass {
+    flex: 0 0 85%;
+    .left_glass {
+      background: beige;
+      .left_top, .left_middle, .left_bottom {
+      }
+      .left_top {
+        background: rgba(0,0,0,0.2);
+      }
+      .left_middle {
+        background: rgba(0,0,0,0.5);
+      }
+      .left_bottom {
+        background: rgba(0,0,0,0.7);
+      }
+    }
+    .right_glass {
+      background: tan;
+      .right_top, .right_bottom {
+      }
+      .right_top {
+        background: red
+      }
+      .right_bottom {
+        background: orange;
+        .right_bottom_left, .right_bottom_right {
+        }
+        .right_bottom_left {
+          background: purple;
+        }
+        .right_bottom_right {
+          background: violet;
+        }
+      }
+    }
+  }
+  .bottom_glass {
+    flex: 0 0 15%;
+    flex-direction: row;
+    .bottom_left, .bottom_middle, .bottom_right {
+    }
+    .bottom_left {
+      flex: 1;
+      background: blue;
+    }
+    .bottom_middle {
+      flex: 2;
+      background: black;
+    }
+    .bottom_right {
+      flex: 3;
+      background: green;
+    }
+  }
+}

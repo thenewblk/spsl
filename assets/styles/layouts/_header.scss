@@ -1,9 +1,22 @@
 header.banner {
   background: $dark;
   height: 75px;
+  overflow: hidden;
+  position: relative;
+  .container {
+    position: relative;
+  }
   .brand {
     img {
       width: 75px;
     }
+  }
+  .menu_button {
+    position : absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    line-height: 75px;
+    margin: 0;
   }
 }
