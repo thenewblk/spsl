@@ -1,65 +1,181 @@
-.home_flex {
+body.home {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  header.banner {
+    flex: 0 0 75px;
+  }
+  footer.content-info {
+    flex: 0 0 35px;
+  }
 }
 
 .stained_glass {
   display: flex;
+  flex: 1;
   flex-direction: column;
   background: orange;
-  height: 100%;
+
   .top_glass {
-    flex: 0 0 85%;
+    flex: 5 0 0;
+    display: flex;
+    flex-direction: row;
     .left_glass {
+      flex:1;
       background: beige;
+      display: flex;
+      flex-direction: column;
       .left_top, .left_middle, .left_bottom {
+        display: flex;
       }
       .left_top {
+        flex: 1;
         background: rgba(0,0,0,0.2);
       }
       .left_middle {
+        flex: 1;
         background: rgba(0,0,0,0.5);
       }
       .left_bottom {
+        flex: 1;
         background: rgba(0,0,0,0.7);
       }
     }
     .right_glass {
+      flex: 2;
       background: tan;
+      display: flex;
+      flex-direction: column;
       .right_top, .right_bottom {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
       }
       .right_top {
-        background: red
+        background: red;
+        .right_left {
+              display: flex;
+          flex: 5;
+          background: yellow;
+        }
+        .right_right {
+          display: flex;
+          flex: 6;
+          display: flex;
+          flex-direction: column;
+          .right_right_top, .right_right_bottom {
+            flex: 1;
+            display: flex;
+          }
+          .right_right_top {
+            background: goldenrod;
+          }
+          .right_right_bottom {
+            background: yellowgreen;
+          }
+        }
       }
       .right_bottom {
         background: orange;
+
         .right_bottom_left, .right_bottom_right {
+          display: flex;
         }
         .right_bottom_left {
           background: purple;
+          flex: 1;
         }
         .right_bottom_right {
           background: violet;
+          flex: 1;
         }
       }
     }
   }
   .bottom_glass {
-    flex: 0 0 15%;
+    display: flex;
+    flex: 1 0 0;
     flex-direction: row;
     .bottom_left, .bottom_middle, .bottom_right {
+      display: flex;
     }
     .bottom_left {
-      flex: 1;
+      flex: 5;
       background: blue;
     }
     .bottom_middle {
-      flex: 2;
+      flex: 4;
       background: black;
     }
     .bottom_right {
-      flex: 3;
+      flex: 4;
       background: green;
     }
   }
+
+  .pane {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    transition: 0.15s ease-out;
+
+    &.lunch {
+      background-image: url(../images/Lunch_small.jpg);
+    }
+
+    &.happening {
+      background-image: url(../images/Calendar_small_temporary.jpg);
+    }
+
+    &.clubs {
+      background-image: url(../images/ClubsSports_Small.jpg);
+    }
+
+    &.gallery {
+      background-image: url(../images/Gallery_art_small.jpg);
+    }
+
+    &.families {
+      background-image: url(../images/forfamilies_small.jpg);
+    }
+
+    &.classrooms {
+      background-image: url(../images/Classrooms_small.jpg);
+    }
+
+    &.story {
+      background-image: url(../images/SPSL_story_small.jpg);
+    }
+
+    &.considering {
+      background-image: url(../images/Considering_small.jpg);
+    }
+
+    &.spslomaha {
+      background-image: url(../images/SPSL_Insta.jpg);
+    }
+
+    &.parishes {
+      background-image: url(../images/Parishes_small.jpg);
+    }
+
+    &.support {
+      background-image: url(../images/Support_small.jpg);
+    }
+
+    &:hover {
+      box-shadow: inset 1px 1px 150px #000;
+      text-decoration: none;
+    }
+
+    .pane_content {
+      color: white;
+      font-family: 'Cardenio-Modern';
+      font-size: 35px;
+    }
+  }
+
 }

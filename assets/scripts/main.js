@@ -20,7 +20,7 @@
       init: function() {
 
         $('.menu_button').click( function(){
-          $('.menu_sidebar').toggleClass("open");
+          $('.menu_sidebar').toggleClass("open"); 
         });
 
       },

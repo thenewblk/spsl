@@ -1,1 +1,14 @@
 
+@font-face {
+    font-family: 'Cardenio-Modern';
+    src:url('../fonts/Cardenio-Modern.ttf.woff') format('woff'),
+        url('../fonts/Cardenio-Modern.ttf.svg#Cardenio-Modern') format('svg'),
+        url('../fonts/Cardenio-Modern.ttf.eot'),
+        url('../fonts/Cardenio-Modern.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cm {
+  font-family: 'Cardenio-Modern';
+}
