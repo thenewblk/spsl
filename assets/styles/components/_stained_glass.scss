@@ -3,10 +3,28 @@ body.home {
   flex-direction: column;
   min-height: 100vh;
   header.banner {
-    flex: 0 0 75px;
+    flex: 0 0 100px;
+    .main_header {
+      .brand img {
+        width: 100px;
+        padding: 5px 0 0;
+      }
+    }
+    .menu_button {
+      line-height: 100px;
+      height: 100px;
+    }
+    .menu_sidebar.open {
+      top: 100px;
+    }
+    .mission {
+      .mission_headline {
+        line-height: 100px;
+      }
+    }
   }
   footer.content-info {
-    flex: 0 0 35px;
+    flex: 0 0 50px;
   }
 }
 
@@ -115,12 +133,14 @@ body.home {
 
   .pane {
     display: flex;
+    position: relative;
     align-items: center;
     flex: 1;
     justify-content: center;
     background-size: cover;
     background-position: center;
     transition: 0.15s ease-out;
+    overflow: hidden;
 
     &.lunch {
       background-image: url(../images/Lunch_small.jpg);
@@ -166,9 +186,38 @@ body.home {
       background-image: url(../images/Support_small.jpg);
     }
 
+    .overlay {
+      position: absolute;
+      height: 120%;
+      width: 120%;
+      left: -10%;
+      top: -10%;
+      margin: 0;
+      padding: 15px;
+      transition: 0.2s ease-out;
+      .overlay_border {
+        display: block;
+        height: 100%;
+        width: 100%;
+        border: 1px solid transparent;
+        transition: 0.2s ease-out;
+      }
+    }
+    &:hover, &:focus, &:active {
+      text-decoration: none;
+    }
     &:hover {
       box-shadow: inset 1px 1px 150px #000;
       text-decoration: none;
+      .overlay {
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        .overlay_border {
+          border: 1px solid white;
+        }
+      }
     }
 
     .pane_content {

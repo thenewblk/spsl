@@ -6,7 +6,10 @@
         <h3 class="mission_headline cm">Our Mission</h3>
         <p class="mission_copy">St. Pius X / St. Leo School is  a diverse community forming students <br /> in the Catholic faith to excel in academics and service to others.</p>
       </div>
-      <span class="menu_button">MENU</span>
+      <span class="menu_button">
+        <img class="navicon" src="<?php echo get_template_directory_uri(); ?>/dist/images/navicon.svg" />
+        <span class="menu_word">MENU</span>
+      </span>
     </div>
     <nav class="menu_sidebar" role="navigation">
       <?php
