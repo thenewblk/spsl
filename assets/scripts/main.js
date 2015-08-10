@@ -18,7 +18,11 @@
     // All pages
     'common': {
       init: function() {
-        // JavaScript to be fired on all pages
+
+        $('.menu_button').click( function(){
+          $('.menu_sidebar').toggleClass("open");
+        });
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

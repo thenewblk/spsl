@@ -1,22 +1,64 @@
 header.banner {
   background: $dark;
   height: 75px;
-  overflow: hidden;
   position: relative;
   .container {
     position: relative;
+    z-index: 1;
   }
   .brand {
     img {
       width: 75px;
     }
   }
+  .mission {
+    color: white;
+  }
   .menu_button {
+    cursor: pointer;
     position : absolute;
     top: 0;
     right: 0;
     color: white;
     line-height: 75px;
     margin: 0;
+  }
+  .main_header {
+    display: table;
+    width: 100%;
+    .brand, .mission, .menu_button {
+      display: table-cell;
+    }
+  }
+}
+
+.menu_sidebar {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  width: 400px;
+  top: -1000%;
+  transition: 0.15s ease-out;
+  &.open {
+    display: block;
+    opacity: 1;
+    background: $dark;
+    top: 75px;
+    max-width: 100%;
+  }
+  .nav {
+    text-align: center;
+    li {
+      &:hover, &:focus, &:active {
+        background: $dark;
+      }
+    }
+    a {
+      color: white;
+      &:hover, &:focus, &:active {
+        color: $gold;
+        background: $dark;
+      }
+    }
   }
 }
