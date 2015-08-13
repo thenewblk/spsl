@@ -1,0 +1,120 @@
+.martinez_container {
+  display: flex;
+  flex-direction: row;
+  .main {
+    flex: 1;
+    .main_wrapper {
+      width: 100%;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .homework_date {
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .homework_copy {
+      padding: 0 20px;
+      font-size: 20px;
+      line-height: 2;
+    }
+  }
+  .newsletter_item {
+    .centered.title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 40px; ;
+    }
+    .centered_text {
+      font-size: 20px;
+      line-height: 2;
+      text-align: center;
+    }
+  }
+  .teacher {
+    padding: 30px;
+    flex: 0 0 320px;
+    background: $dark;
+    color: white;
+    p {
+      font-size: 16px;
+    }
+    .teacher_image {
+      margin-bottom: 20px;
+    }
+    .icons {
+      display: table;
+      margin: auto;
+      .icon {
+        width: 25px;
+        display: inline-block;
+        margin: 10px 10px;
+      }
+    }
+    .teacher_links {
+      margin: 20px 0;
+      .teacher_link {
+        display: block;
+        color: white;
+        transition: 0.15s ease-out;
+        text-align: center;
+        font-size: 30px;
+        line-height: 50px;
+        border-bottom: rgba(255,255,255,0.7) solid 1px;
+        &:hover {
+          color: $gold;
+        }
+      }
+    }
+
+    .classroom_events {
+      .classroom_event {
+        width: 100%;
+        border-radius: 10px;
+        margin: 15px 0;
+        overflow: hidden;
+        .day {
+          background: $gold;
+          line-height: 2;
+          text-align: center;
+          color: $dark;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+        .bottom {
+          display: flex;
+          flex-direction: row;
+          .date {
+            flex: 0 0 100px;
+            background: $red;
+            .month {
+              text-transform: uppercase;
+              text-align: center;
+              display: block;
+              padding-top: 5px;
+            }
+            .number {
+              font-size: 50px;
+              text-align: center;
+              display: block;
+              line-height: 50px;
+              margin: 10px 0;
+            }
+          }
+          .title {
+            background: white;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            color: $dark;
+            text-align: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+  }
+}

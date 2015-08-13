@@ -47,11 +47,11 @@ body.home {
         display: flex;
       }
       .left_top {
-        flex: 1;
+        flex: 2;
         background: rgba(0,0,0,0.2);
       }
       .left_middle {
-        flex: 1;
+        flex: 2;
         background: rgba(0,0,0,0.5);
       }
       .left_bottom {
@@ -72,7 +72,7 @@ body.home {
       .right_top {
         background: red;
         .right_left {
-              display: flex;
+          display: flex;
           flex: 5;
           background: yellow;
         }
@@ -141,7 +141,9 @@ body.home {
     background-position: center;
     transition: 0.15s ease-out;
     overflow: hidden;
-
+    padding: 20px;
+    text-align: center;
+    
     &.lunch {
       background-image: url(../images/Lunch_small.jpg);
     }
@@ -223,7 +225,7 @@ body.home {
     .pane_content {
       color: white;
       font-family: 'Cardenio-Modern';
-      font-size: 35px;
+      font-size: 45px;
     }
   }
 

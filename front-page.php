@@ -43,7 +43,7 @@
               </a>
             </div>
             <div class="right_right_bottom">
-              <a href="#" class="pane classrooms">
+              <a href="/classrooms/" class="pane classrooms">
                 <span class="pane_content">Classrooms</span>
                 <span class="overlay"><span class="overlay_border"></span></span>
               </a>

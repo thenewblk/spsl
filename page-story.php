@@ -10,7 +10,6 @@
   <div class="bottom_bar"></div>
 </div>
 
-
 <div class="container">
   <img class="full_width" src="<?php echo get_template_directory_uri(); ?>/dist/images/video_placeholder.png" />
   <?php while (have_posts()) : the_post(); ?>
@@ -42,8 +41,7 @@
     </svg>
   </div>
   <p><b>SPSL has over 6,000 alumni, dating back to our first graduating class in 1957.</b></p>
-  <p>Our students go on to do great things, in ways large and small, dedicated to lifetime learning and service to others. If you’re an alumni,
-you are still a vital part of the SPSL community. We want to hear what you’ve been up to! </p>
+  <p>Our students go on to do great things, in ways large and small, dedicated to lifetime learning and service to others. If you’re an alumni, you are still a vital part of the SPSL community. We want to hear what you’ve been up to! </p>
   <a href="#" class="slim_button dark"><span class="slim_wrapper">View Alumni Newsletter</span></a>
   <a href="#" class="slim_button red"><span class="slim_wrapper">Update Alumni Profile</span></a>
   <a href="#" class="slim_button dark"><span class="slim_wrapper">Ways to Support</span></a>

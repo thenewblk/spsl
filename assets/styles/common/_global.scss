@@ -20,6 +20,10 @@ img {
     margin: 50px 0;
   }
 }
+p {
+  font-size: 20px;
+  line-height: 2;
+}
 
 .slim_button {
   font-family: 'Cardenio-Modern';
@@ -66,4 +70,10 @@ img {
   }
 
 
+}
+
+a {
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
 }
