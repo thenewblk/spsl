@@ -354,9 +354,279 @@ function psp_add_teacher_caps() {
 	}
 }
 
-// add_action( 'admin_menu', __NAMESPACE__ . '\\my_admin_menu' );
-//
-// function my_admin_menu() {
-// 	add_menu_page( '7th Grade Stuff Page', '7th Grade Stuff', '7th_grade_teacher', 'seventh_homework', null, 'dashicons-tickets', 6  );
-// 	add_submenu_page( 'seventh_homework', 'My Sub Level Menu Example', 'Sub Level Menu',  '7th_grade_teacher', 'edit.php?post_type=seventh_homework', 'myplguin_admin_sub_page' );
-// }
+// ACF
+
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_classroom',
+		'title' => 'Classroom',
+		'fields' => array (
+			array (
+				'key' => 'field_55ccaca426f50',
+				'label' => 'Grade',
+				'name' => 'grade',
+				'type' => 'select',
+				'choices' => array (
+					'Pre-K' => 'Pre-K',
+					'Kindergarten' => 'Kindergarten',
+					'1st Grade' => '1st Grade',
+					'2nd Grade' => '2nd Grade',
+					'3rd Grade' => '3rd Grade',
+					'4th Grade' => '4th Grade',
+					'5th Grade' => '5th Grade',
+					'6th Grade' => '6th Grade',
+					'7th Grade' => '7th Grade',
+					'8th Grade' => '8th Grade',
+				),
+				'default_value' => '',
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'classroom',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+				0 => 'the_content',
+				1 => 'excerpt',
+				2 => 'custom_fields',
+				3 => 'discussion',
+				4 => 'comments',
+				5 => 'revisions',
+				6 => 'format',
+				7 => 'categories',
+				8 => 'tags',
+				9 => 'send-trackbacks',
+			),
+		),
+		'menu_order' => 0,
+	));
+	register_field_group(array (
+		'id' => 'acf_homework',
+		'title' => 'Homework',
+		'fields' => array (
+			array (
+				'key' => 'field_55cbb35c03bec',
+				'label' => 'Classroom',
+				'name' => 'classroom',
+				'type' => 'post_object',
+				'post_type' => array (
+					0 => 'classroom',
+				),
+				'taxonomy' => array (
+					0 => 'all',
+				),
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+			array (
+				'key' => 'field_55ce1cf066410',
+				'label' => 'Due Date',
+				'name' => 'due_date',
+				'type' => 'date_picker',
+				'instructions' => 'Pick a Date',
+				'date_format' => 'yymmdd',
+				'display_format' => 'dd/mm/yy',
+				'first_day' => 1,
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'homework',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+				0 => 'excerpt',
+				1 => 'custom_fields',
+				2 => 'discussion',
+				3 => 'comments',
+				4 => 'revisions',
+				5 => 'slug',
+				6 => 'format',
+				7 => 'featured_image',
+				8 => 'categories',
+				9 => 'tags',
+				10 => 'send-trackbacks',
+			),
+		),
+		'menu_order' => 0,
+	));
+	register_field_group(array (
+		'id' => 'acf_lunch-item',
+		'title' => 'Lunch Item',
+		'fields' => array (
+			array (
+				'key' => 'field_55c9283db1486',
+				'label' => 'Event',
+				'name' => 'event',
+				'type' => 'post_object',
+				'post_type' => array (
+					0 => 'event',
+				),
+				'taxonomy' => array (
+					0 => 'all',
+				),
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+			array (
+				'key' => 'field_55c9285cb1487',
+				'label' => '',
+				'name' => '',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'lunch_item',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+	register_field_group(array (
+		'id' => 'acf_newsletter',
+		'title' => 'Newsletter',
+		'fields' => array (
+			array (
+				'key' => 'field_55ccf7cd2627f',
+				'label' => 'Classroom',
+				'name' => 'classroom',
+				'type' => 'post_object',
+				'post_type' => array (
+					0 => 'classroom',
+				),
+				'taxonomy' => array (
+					0 => 'all',
+				),
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+			array (
+				'key' => 'field_55ccf94ffe48f',
+				'label' => 'Featured Image',
+				'name' => 'featured_image',
+				'type' => 'image',
+				'save_format' => 'object',
+				'preview_size' => 'thumbnail',
+				'library' => 'all',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'newsletter',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+				0 => 'custom_fields',
+				1 => 'discussion',
+				2 => 'comments',
+				3 => 'revisions',
+				4 => 'slug',
+				5 => 'author',
+				6 => 'format',
+				7 => 'categories',
+				8 => 'tags',
+				9 => 'send-trackbacks',
+			),
+		),
+		'menu_order' => 0,
+	));
+	register_field_group(array (
+		'id' => 'acf_user-profile',
+		'title' => 'User Profile',
+		'fields' => array (
+			array (
+				'key' => 'field_55cd2c14840a7',
+				'label' => 'Profile Picture',
+				'name' => 'profile_picture',
+				'type' => 'image',
+				'save_format' => 'object',
+				'preview_size' => 'thumbnail',
+				'library' => 'all',
+			),
+			array (
+				'key' => 'field_55ce1b4807ac7',
+				'label' => 'Title',
+				'name' => 'title',
+				'type' => 'select',
+				'choices' => array (
+					'null' => '( None )',
+					'Mr.' => 'Mr.',
+					'Mrs.' => 'Mrs.',
+					'Miss' => 'Miss',
+					'Ms.' => 'Ms.',
+					'Dr.' => 'Dr.',
+				),
+				'default_value' => '',
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'ef_user',
+					'operator' => '==',
+					'value' => 'all',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
