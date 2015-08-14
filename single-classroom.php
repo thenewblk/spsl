@@ -1,7 +1,9 @@
+
+<?php while ( have_posts() ) : the_post(); ?>
 <?php $url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); $url = $url['0']; ?>
 <?php $this_classroom = get_the_title($post); ?>
 <div class="page_header" style="background-image: url(<?php echo $url ?>)">
-  <h2 class="page_title cm">Classroom <?php echo $this_classroom; ?></h2>
+  <h2 class="page_title cm">Classroom <?php echo $this_classroom; ?><br /><?php echo get_the_author_meta( 'title' ); ?> <?php echo get_the_author_meta( 'display_name' ); ?></h2>
   <div class="bottom_bar"></div>
 </div>
 
@@ -19,7 +21,6 @@
           </g>
         </svg>
       </div>
-
 
       <?php query_posts('post_type=homework&showposts=-1'); ?>
     		<?php while ( have_posts() ) : the_post(); ?>
@@ -63,7 +64,7 @@
   </div>
   <div class="teacher">
     <img class="teacher_image" src="<?php echo get_template_directory_uri(); ?>/dist/images/example_teacher.png" />
-    <p>Hi, I am Mrs. Martinez. I like dogs & camping. I’ve been a teacher for 6 years. I love how creative and intelligent young students can be. I think learning should be and can be a lot of fun!</p>
+    <p><?php echo get_the_author_meta( 'description'); ?></p>
     <div class="icons">
       <a href="#" class="icon twitter">
         <img src="<?php echo get_template_directory_uri(); ?>/dist/images/twitter.svg" />
@@ -107,3 +108,4 @@
     </div>
   </div>
 </div>
+<?php endwhile; ?>
