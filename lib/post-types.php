@@ -355,7 +355,7 @@ function psp_add_teacher_caps() {
 }
 
 // ACF
-
+/*
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (
@@ -630,3 +630,4 @@ if(function_exists("register_field_group"))
 		'menu_order' => 0,
 	));
 }
+*/

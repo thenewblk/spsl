@@ -37,8 +37,8 @@
           </div>
           <div class="right_right">
             <div class="right_right_top">
-              <a href="#" class="pane families">
-                <span class="pane_content">For Families</span>
+              <a href="/for-parents/" class="pane families">
+                <span class="pane_content">For Parents</span>
                 <span class="overlay"><span class="overlay_border"></span></span>
               </a>
             </div>

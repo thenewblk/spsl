@@ -1,9 +1,10 @@
 <?php
 /**
- * Template Name: Martinez Page Template
+ * Template Name: Martinez Page
  */
+ $url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );
+ $url = $url['0'];
 ?>
-<?php $url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); $url = $url['0']; ?>
 
 <div class="page_header" style="background-image: url(<?php echo $url ?>)">
   <h2 class="page_title cm">Classroom 7b <br /><?php the_title(); ?></h2>

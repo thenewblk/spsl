@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Classrooms Page Template
+ * Template Name: Classrooms Page
  */
 ?>
 <?php $url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); $url = $url['0']; ?>

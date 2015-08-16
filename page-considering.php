@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Considering Page Template
+ * Template Name: Considering Page
  */
 ?>
 <?php $url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); $url = $url['0']; ?>

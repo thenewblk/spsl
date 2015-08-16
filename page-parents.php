@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Story Page
+ * Template Name: Parents Page
  */
 ?>
 <?php $url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); $url = $url['0']; ?>
@@ -11,14 +11,8 @@
 </div>
 
 <div class="container">
-  <img class="full_width" src="<?php echo get_template_directory_uri(); ?>/dist/images/video_placeholder.png" />
-  <?php while (have_posts()) : the_post(); ?>
-        <?php the_content(); ?>
-  <?php endwhile; ?>
-
-
   <div class="color_band_headline">
-    <h3 class="band_headline">CELEBRATING 60 YEARS</h3>
+    <h3 class="band_headline">Daily Announcements</h3>
     <svg version="1.1" class="color_band" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        viewBox="0 0 1043 135.3" enable-background="new 0 0 1043 135.3" xml:space="preserve" preserveAspectRatio="none">
       <g>
@@ -28,9 +22,23 @@
       </g>
     </svg>
   </div>
-  <h1 style="text-align: center; margin: 150px;"> {{{{{{{PHOTO GALLERY}}}}}}} </h1>
+  <?php while (have_posts()) : the_post(); ?>
+        <?php the_content(); ?>
+  <?php endwhile; ?>
   <div class="color_band_headline">
-    <h3 class="band_headline">For Alumni</h3>
+    <h3 class="band_headline">Your Dashboard</h3>
+    <svg version="1.1" class="color_band" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       viewBox="0 0 1043 135.3" enable-background="new 0 0 1043 135.3" xml:space="preserve" preserveAspectRatio="none">
+      <g>
+        <polygon opacity="0.76" fill="#209AD6" points="9.8,14.2 1043,40.4 1041.5,133.8 5.2,122.7 	"/>
+        <polygon fill="#F3AE32" points="24,37.9 753.9,14.7 1041.1,65 	"/>
+        <polygon fill="#10202B" points="0,0 1042.7,58.2 1042.7,135.3 5.2,135.3 	"/>
+      </g>
+    </svg>
+  </div>
+  {DASHBOARD}
+  <div class="color_band_headline">
+    <h3 class="band_headline">Tools</h3>
     <svg class="color_band" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        viewBox="0 0 1386.8 123.1" enable-background="new 0 0 1386.8 123.1" xml:space="preserve" preserveAspectRatio="none">
       <g>
@@ -40,9 +48,4 @@
       </g>
     </svg>
   </div>
-  <p><b>SPSL has over 6,000 alumni, dating back to our first graduating class in 1957.</b></p>
-  <p>Our students go on to do great things, in ways large and small, dedicated to lifetime learning and service to others. If you’re an alumni, you are still a vital part of the SPSL community. We want to hear what you’ve been up to! </p>
-  <a href="#" class="slim_button dark"><span class="slim_wrapper">View Alumni Newsletter</span></a>
-  <a href="#" class="slim_button red"><span class="slim_wrapper">Update Alumni Profile</span></a>
-  <a href="#" class="slim_button dark"><span class="slim_wrapper">Ways to Support</span></a>
 </div>
