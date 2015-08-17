@@ -42,6 +42,7 @@ function lunch_item() {
 		'publicly_queryable'  => true,
 		'capability_type'     => array('school_admin', 'school_admins'),
     'map_meta_cap'        => true,
+		'rewrite'							=> array( 'slug' => 'lunch' ),
 	);
 	register_post_type( 'lunch_item', $args );
 
@@ -185,25 +186,25 @@ add_action( 'init', __NAMESPACE__ . '\\newsletter', 0 );
 function event() {
 
 	$labels = array(
-		'name'                => _x( 'Event', 'Post Type General Name', 'text_domain' ),
-		'singular_name'       => _x( 'Event', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'           => __( 'Event', 'text_domain' ),
-		'name_admin_bar'      => __( 'Event', 'text_domain' ),
-		'parent_item_colon'   => __( 'Parent Event:', 'text_domain' ),
-		'all_items'           => __( 'All Event', 'text_domain' ),
-		'add_new_item'        => __( 'Add Event', 'text_domain' ),
-		'add_new'             => __( 'Add Event', 'text_domain' ),
-		'new_item'            => __( 'New Event', 'text_domain' ),
-		'edit_item'           => __( 'Edit Event', 'text_domain' ),
-		'update_item'         => __( 'Update Event', 'text_domain' ),
-		'view_item'           => __( 'View Event', 'text_domain' ),
-		'search_items'        => __( 'Search Event', 'text_domain' ),
+		'name'                => _x( 'Classroom Event', 'Post Type General Name', 'text_domain' ),
+		'singular_name'       => _x( 'Classroom Event', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'           => __( 'Classroom Event', 'text_domain' ),
+		'name_admin_bar'      => __( 'Classroom Event', 'text_domain' ),
+		'parent_item_colon'   => __( 'Parent Classroom Event:', 'text_domain' ),
+		'all_items'           => __( 'All Classroom Event', 'text_domain' ),
+		'add_new_item'        => __( 'Add Classroom Event', 'text_domain' ),
+		'add_new'             => __( 'Add Classroom Event', 'text_domain' ),
+		'new_item'            => __( 'New Classroom Event', 'text_domain' ),
+		'edit_item'           => __( 'Edit Classroom Event', 'text_domain' ),
+		'update_item'         => __( 'Update Classroom Event', 'text_domain' ),
+		'view_item'           => __( 'View Classroom Event', 'text_domain' ),
+		'search_items'        => __( 'Search Classroom Event', 'text_domain' ),
 		'not_found'           => __( 'Not found', 'text_domain' ),
 		'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
 	);
 	$args = array(
-		'label'               => __( 'Event', 'text_domain' ),
-		'description'         => __( 'Event Description', 'text_domain' ),
+		'label'               => __( 'Classroom Event', 'text_domain' ),
+		'description'         => __( 'Classroom Event Description', 'text_domain' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'thumbnail'),
 		'hierarchical'        => false,
@@ -225,6 +226,52 @@ function event() {
 
 }
 add_action( 'init', __NAMESPACE__ . '\\event', 0 );
+
+// Register Custom Post Type
+function classroom_link() {
+
+	$labels = array(
+		'name'                => _x( 'Classroom Link', 'Post Type General Name', 'text_domain' ),
+		'singular_name'       => _x( 'Classroom Link', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'           => __( 'Classroom Link', 'text_domain' ),
+		'name_admin_bar'      => __( 'Classroom Link', 'text_domain' ),
+		'parent_item_colon'   => __( 'Parent Classroom Link:', 'text_domain' ),
+		'all_items'           => __( 'All Classroom Link', 'text_domain' ),
+		'add_new_item'        => __( 'Add Classroom Link', 'text_domain' ),
+		'add_new'             => __( 'Add Classroom Link', 'text_domain' ),
+		'new_item'            => __( 'New Classroom Link', 'text_domain' ),
+		'edit_item'           => __( 'Edit Classroom Link', 'text_domain' ),
+		'update_item'         => __( 'Update Classroom Link', 'text_domain' ),
+		'view_item'           => __( 'View Classroom Link', 'text_domain' ),
+		'search_items'        => __( 'Search Classroom Link', 'text_domain' ),
+		'not_found'           => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
+	);
+	$args = array(
+		'label'               => __( 'Classroom Link', 'text_domain' ),
+		'description'         => __( 'Classroom Link Description', 'text_domain' ),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'thumbnail'),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'menu_position'       => 5,
+		'show_in_admin_bar'   => true,
+		'show_in_nav_menus'   => true,
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		// 'capability_type'     => 'page',
+    'capability_type'     => array('classroom', 'classrooms'),
+    'map_meta_cap'        => true,
+	);
+	register_post_type( 'classroom_link', $args );
+
+}
+add_action( 'init', __NAMESPACE__ . '\\classroom_link', 0 );
+
 
 function spsl_add_school_administrator() {
 	remove_role('school_administrator');
@@ -353,6 +400,16 @@ function psp_add_teacher_caps() {
 
 	}
 }
+
+function namespace_add_custom_types( $query ) {
+  if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+    $query->set( 'post_type', array(
+     'post', 'nav_menu_item', 'lunch_item'
+		));
+	  return $query;
+	}
+}
+add_filter( 'pre_get_posts', __NAMESPACE__ . '\\namespace_add_custom_types' );
 
 // ACF
 /*

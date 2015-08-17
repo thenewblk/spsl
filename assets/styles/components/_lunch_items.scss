@@ -1,0 +1,56 @@
+.lunch_item {
+  margin: 30px 0;
+  .lunch_date {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 150px;
+    display: inline-block;
+    background: black;
+    .weekday {
+      background: $gold;
+      text-align: center;
+    }
+    .content {
+      background: black;
+      color: white;
+      .month {
+        text-transform: uppercase;
+        text-align: center;
+            line-height: 1;
+      }
+      .day {
+        font-size: 75px;
+        text-align: center;
+            line-height: 1;
+      }
+    }
+  }
+  .lunch_content {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    .lunch_copy, .lunch_copy p {
+      line-height: 1;
+    }
+  }
+  &.featured {
+    .lunch_date {
+      width: 225px;
+      .weekday {
+        font-size: 30px;
+      }
+      .content {
+        .month {
+          font-size: 30px;
+        }
+        .day {
+          font-size: 125px;
+        }
+      }
+    }
+  }
+}
+.featured_lunch_break {
+  background: $gold;
+  height: 15px;
+}
