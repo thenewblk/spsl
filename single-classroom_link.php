@@ -11,7 +11,7 @@
   <div class="main">
     <div class="main_wrapper">
       <div class="color_band_headline">
-        <h3 class="band_headline"><?php echo get_the_title($post);; ?></h3>
+        <h3 class="band_headline"><?php echo get_the_title($post); ?></h3>
         <svg version="1.1" class="color_band" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            viewBox="0 0 1043 135.3" enable-background="new 0 0 1043 135.3" xml:space="preserve" preserveAspectRatio="none">
           <g>

@@ -3,13 +3,15 @@
 <?php $url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); $url = $url['0']; ?>
 <?php $this_classroom = get_the_title($post); ?>
 <div class="page_header" style="background-image: url(<?php echo $url ?>)">
-  <h2 class="page_title cm">Classroom <?php echo $this_classroom; ?><br /><?php echo get_the_author_meta( 'title' ); ?> <?php echo get_the_author_meta( 'display_name' ); ?></h2>
+  <h2 class="page_title cm"><?php echo $this_classroom; ?><br />
+    <?php echo get_the_author_meta( 'title' ); ?> <?php echo get_the_author_meta( 'display_name' ); ?></h2>
   <div class="bottom_bar"></div>
 </div>
 
 <div class="martinez_container">
   <div class="main">
     <div class="main_wrapper">
+
       <div class="color_band_headline">
         <h3 class="band_headline">Homework</h3>
         <svg version="1.1" class="color_band" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -35,7 +37,7 @@
     		<?php endwhile; ?>
       <?php wp_reset_query(); ?>
 
-      <a href="#" class="slim_button red"><span class="slim_wrapper">7th Grade Homework Blog</span></a>
+      <!-- <a href="#" class="slim_button red"><span class="slim_wrapper">7th Grade Homework Blog</span></a> -->
       <div class="color_band_headline">
         <h3 class="band_headline">Newsletter</h3>
         <svg version="1.1" class="color_band" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -83,7 +85,7 @@
       </a>
     </div>
     <div class="teacher_links">
-      <a class="teacher_link cm" href="#">Classroom 7b Home</a>
+      <a class="teacher_link cm" href="#">Classroom <?php echo get_the_title( get_field('classroom')); ?> Home</a>
       <?php $loop = new WP_Query( array( 'post_type' => 'classroom_link', 'posts_per_page' => -1  ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <?php $post_object = get_field('classroom');

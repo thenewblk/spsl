@@ -33,7 +33,7 @@ function lunch_item() {
 		'public'              => true,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
-		'menu_position'       => 5,
+		'menu_position'       => 1,
 		'show_in_admin_bar'   => true,
 		'show_in_nav_menus'   => true,
 		'can_export'          => true,
@@ -78,7 +78,7 @@ function school_event() {
 		'public'              => true,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
-		'menu_position'       => 5,
+		'menu_position'       => 1,
 		'show_in_admin_bar'   => true,
 		'show_in_nav_menus'   => true,
 		'can_export'          => true,
@@ -122,7 +122,7 @@ function homework() {
 		'public'              => true,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
-		'menu_position'       => 5,
+		'menu_position'       => 1,
 		'show_in_admin_bar'   => true,
 		'show_in_nav_menus'   => true,
 		'can_export'          => true,
@@ -166,14 +166,13 @@ function newsletter() {
 		'public'              => true,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
-		'menu_position'       => 5,
+		'menu_position'       => 1,
 		'show_in_admin_bar'   => true,
 		'show_in_nav_menus'   => true,
 		'can_export'          => true,
 		'has_archive'         => true,
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
-		// 'capability_type'     => 'page',
     'capability_type'     => array('classroom', 'classrooms'),
     'map_meta_cap'        => true,
 	);
@@ -211,14 +210,13 @@ function event() {
 		'public'              => true,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
-		'menu_position'       => 5,
+		'menu_position'       => 1,
 		'show_in_admin_bar'   => true,
 		'show_in_nav_menus'   => true,
 		'can_export'          => true,
 		'has_archive'         => true,
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
-		// 'capability_type'     => 'page',
     'capability_type'     => array('classroom', 'classrooms'),
     'map_meta_cap'        => true,
 	);
@@ -226,6 +224,51 @@ function event() {
 
 }
 add_action( 'init', __NAMESPACE__ . '\\event', 0 );
+
+// Register Custom Post Type
+function homeworkblog() {
+
+	$labels = array(
+		'name'                => _x( 'Homework Blog', 'Post Type General Name', 'text_domain' ),
+		'singular_name'       => _x( 'Homework Blog', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'           => __( 'Homework Blog', 'text_domain' ),
+		'name_admin_bar'      => __( 'Homework Blog', 'text_domain' ),
+		'parent_item_colon'   => __( 'Parent Homework Blog:', 'text_domain' ),
+		'all_items'           => __( 'All Homework Blog', 'text_domain' ),
+		'add_new_item'        => __( 'Add Homework Blog', 'text_domain' ),
+		'add_new'             => __( 'Add Homework Blog', 'text_domain' ),
+		'new_item'            => __( 'New Homework Blog', 'text_domain' ),
+		'edit_item'           => __( 'Edit Homework Blog', 'text_domain' ),
+		'update_item'         => __( 'Update Homework Blog', 'text_domain' ),
+		'view_item'           => __( 'View Homework Blog', 'text_domain' ),
+		'search_items'        => __( 'Search Homework Blog', 'text_domain' ),
+		'not_found'           => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
+	);
+	$args = array(
+		'label'               => __( 'Homework Blog', 'text_domain' ),
+		'description'         => __( 'Homework Blog Description', 'text_domain' ),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'thumbnail'),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'menu_position'       => 1,
+		'show_in_admin_bar'   => true,
+		'show_in_nav_menus'   => true,
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		// 'capability_type'     => 'page',
+    'map_meta_cap'        => true,
+	);
+	register_post_type( 'homeworkblog', $args );
+
+}
+add_action( 'init', __NAMESPACE__ . '\\homeworkblog', 0 );
+
 
 // Register Custom Post Type
 function classroom_link() {
@@ -256,7 +299,7 @@ function classroom_link() {
 		'public'              => true,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
-		'menu_position'       => 5,
+		'menu_position'       => 1,
 		'show_in_admin_bar'   => true,
 		'show_in_nav_menus'   => true,
 		'can_export'          => true,
@@ -344,7 +387,7 @@ function classroom() {
 		'public'              => true,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
-		'menu_position'       => 5,
+		'menu_position'       => 1,
 		'show_in_admin_bar'   => true,
 		'show_in_nav_menus'   => true,
 		'can_export'          => true,
@@ -401,7 +444,7 @@ function psp_add_teacher_caps() {
 	}
 }
 
-function namespace_add_custom_types( $query ) {
+function namespace_lunch_types( $query ) {
   if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
     $query->set( 'post_type', array(
      'post', 'nav_menu_item', 'lunch_item'
@@ -409,7 +452,7 @@ function namespace_add_custom_types( $query ) {
 	  return $query;
 	}
 }
-add_filter( 'pre_get_posts', __NAMESPACE__ . '\\namespace_add_custom_types' );
+add_filter( 'pre_get_posts', __NAMESPACE__ . '\\namespace_lunch_types' );
 
 // ACF
 /*
