@@ -9,7 +9,7 @@
     <div class="top_glass">
       <div class="left_glass">
         <div class="left_top">
-          <a href="#" class="pane lunch">
+          <a href="/lunch" class="pane lunch">
             <span class="pane_content">What's for Lunch?</span>
             <span class="overlay"><span class="overlay_border"></span></span>
           </a>

@@ -1,8 +1,8 @@
 <?php
 
-namespace Roots\Sage\PostTypes;
-
-use Roots\Sage\Assets;
+// namespace Roots\Sage\PostTypes;
+//
+// use Roots\Sage\Assets;
 
 // Register Custom Post Type
 function lunch_item() {
@@ -48,6 +48,114 @@ function lunch_item() {
 
 }
 add_action( 'init', __NAMESPACE__ . '\\lunch_item', 0 );
+
+add_action( 'pre_get_posts', function ( $q ) {
+
+    if( !is_admin() && $q->is_main_query() && $q->is_post_type_archive( 'lunch_item' ) ) {
+
+        $q->set( 'posts_per_page', 5 );
+
+    }
+
+});
+
+//manage the columns of the `page` post type
+function manage_columns_for_lunch_item($columns){
+    //remove columns
+    // unset($columns['date']);
+    // unset($columns['comments']);
+    // unset($columns['author']);
+
+    //add new columns
+    $columns['lunch_date'] = 'Lunch Date';
+
+    return $columns;
+}
+add_action('manage_lunch_item_posts_columns', __NAMESPACE__ . '\\manage_columns_for_lunch_item');
+
+//Populate custom columns for `page` post type
+function populate_lunch_item_columns($column,$post_id){
+
+    //page content column
+    if($column == 'lunch_date'){
+
+        //get the page based on its post_id
+        $page = get_post($post_id);
+        if($page){
+            //get the main content area
+						$lunch_date = get_field('lunch_date');
+						$date = new DateTime($lunch_date);
+						$date->format('l, F d');
+            // $page_content = apply_filters('the_content', $page->post_content);
+            echo $date->format('l, F dS');
+        }
+    }
+}
+add_action('manage_lunch_item_posts_custom_column', __NAMESPACE__ . '\\populate_lunch_item_columns',10,2);
+
+add_filter( 'manage_edit-lunch_item_sortable_columns',  __NAMESPACE__ . '\\my_sortable_lunch_item_column' );
+function my_sortable_lunch_item_column( $columns ) {
+    $columns['lunch_date'] = 'lunch_date';
+
+    //To make a column 'un- remove it from the array
+    //unset($columns['date']);
+
+    return $columns;
+}
+
+add_action( 'pre_get_posts', __NAMESPACE__ . '\\my_lunch_date_orderby' );
+function my_lunch_date_orderby( $query ) {
+    if( ! is_admin() )
+        return;
+
+    $orderby = $query->get( 'orderby');
+
+    if( 'lunch_date' == $orderby ) {
+        $query->set('meta_key','lunch_date');
+        $query->set('orderby','meta_value_num');
+    }
+}
+
+// add_action( 'pre_get_posts', __NAMESPACE__ . '\\manage_wp_posts_be_qe_pre_get_posts', 1 );
+// function manage_wp_posts_be_qe_pre_get_posts( $query ) {
+//
+//    /**
+//     * We only want our code to run in the main WP query
+//     * AND if an orderby query variable is designated.
+//     */
+//    if ( $query->is_main_query() && ( $orderby = $query->get( 'orderby' ) ) ) {
+//
+//       switch( $orderby ) {
+//          // If we're ordering by 'film_rating'
+//          case 'lunch_date':
+//             // set our query's meta_key, which is used for custom fields
+//             $query->set( 'meta_key', 'lunch_date' );
+//
+//             /**
+//              * Tell the query to order by our custom field/meta_key's
+//              * value, in this film rating's case: PG, PG-13, R, etc.
+//              *
+//              * If your meta value are numbers, change 'meta_value'
+//              * to 'meta_value_num'.
+//              */
+//             $query->set( 'orderby', 'meta_value' );
+//             break;
+//       }
+//    }
+// }
+
+function lunch_item_column_orderby( $vars ) {
+    if ( isset( $vars['orderby'] ) && 'lunch_item' == $vars['orderby'] ) {
+        $vars = array_merge( $vars, array(
+            'meta_key' => 'lunch_item',
+            'orderby' => 'meta_value_num'
+        ) );
+    }
+
+    return $vars;
+}
+add_filter( 'request', __NAMESPACE__ . '\\lunch_item_column_orderby' );
+
 
 // Register Custom Post Type
 function school_event() {
@@ -350,8 +458,10 @@ function psp_add_school_administrator_role_caps() {
 			 $role->add_cap( 'read_private_school_admins' );
 			 $role->add_cap( 'edit_school_admin' );
 			 $role->add_cap( 'edit_school_admins' );
+			 $role->add_cap( 'edit_others_school_admins' );
 			 $role->add_cap( 'edit_published_school_admins' );
 			 $role->add_cap( 'publish_school_admins' );
+			 $role->add_cap( 'publish_others_school_admin' );
 			 $role->add_cap( 'delete_private_school_admins' );
 			 $role->add_cap( 'delete_published_school_admins' );
 

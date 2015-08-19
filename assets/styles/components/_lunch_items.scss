@@ -54,3 +54,133 @@
   background: $gold;
   height: 15px;
 }
+
+.next_week_wrapper, .prev_week_wrapper {
+  position: relative;
+  overflow: hidden;
+  font-size: 25px;
+  .next_week {
+    position: relative;
+    float: right;
+    background: $gold;
+    transition: 0.15s ease-out;
+    width: 200px;
+    width: 275px;
+    text-transform: uppercase;
+    &:before {
+      content: '';
+      display: block;
+      border: $gold 1000px solid;
+      position: absolute;
+      right: 100%;
+      top: 0;
+      border-top-color: transparent;
+      border-right: 500px solid $gold;
+      border-left-color: transparent;
+      transition: 0.15s ease-out;
+    }
+    a {
+      display: block;
+      color: $dark;
+      padding: 15px 10%;
+      padding-right: 15%;
+      text-align: center;
+      transition: 0.15s ease-out;
+      &:hover {
+        color: white;
+      }
+    }
+    &:hover {
+      background: $dark;
+      &:before {
+        border-right-color: $dark;
+        border-bottom-color: $dark;
+      }
+    }
+  }
+  .prev_week {
+    position: relative;
+    float: left;
+    background: $gold;
+    transition: 0.15s ease-out;
+    width: 200px;
+    width: 275px;
+    text-transform: uppercase;
+    &:before {
+      content: '';
+      display: block;
+      border: $gold 1000px solid;
+      position: absolute;
+      left: 100%;
+      top: 0;
+      border-top-color: transparent;
+      border-left: 500px solid $gold;
+      border-right-color: transparent;
+      transition: 0.15s ease-out;
+    }
+    a {
+      display: block;
+      color: $dark;
+      padding: 15px 10%;
+      padding-right: 15%;
+      text-align: center;
+      transition: 0.15s ease-out;
+      &:hover {
+        color: white;
+      }
+    }
+    &:hover {
+      background: $dark;
+      &:before {
+        border-left-color: $dark;
+        border-bottom-color: $dark;
+      }
+    }
+  }
+}
+
+.next_week_wrapper {
+  width: 320px;
+  max-width: 100%;
+  float: right;
+}
+
+.prev_week_wrapper {
+  width: 320px;
+  max-width: 100%;
+  float: left;
+}
+
+.next_lunch {
+  color: $dark;
+  position: relative;
+  overflow: hidden;
+  font-size: 35px;
+  font-weight: bold;
+
+  .title, .weekday {
+    float: right;
+    padding: 15px;
+  }
+  .title {
+    background: $gold;
+    padding-right: 20%;
+  }
+  .weekday {
+    background: $dark;
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    &:before {
+      content: '';
+      display: block;
+      border: $dark 1000px solid;
+      position: absolute;
+      right: 100%;
+      top: 0;
+      border-top-color: transparent;
+      border-right: 500px solid $dark;
+      border-left-color: transparent;
+    }
+  }
+}
