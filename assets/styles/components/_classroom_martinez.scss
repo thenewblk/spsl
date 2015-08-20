@@ -66,6 +66,9 @@
         &:hover {
           color: $gold;
         }
+        &:last-child {
+          border: none;
+        }
       }
     }
 

@@ -213,6 +213,7 @@ function school_event() {
 		'publicly_queryable'  => true,
 		'capability_type'     => array('school_admin', 'school_admins'),
     'map_meta_cap'        => true,
+		'rewrite'							=> array( 'slug' => 'school-calendar' ),
 	);
 	register_post_type( 'school_event', $args );
 
@@ -519,10 +520,13 @@ function psp_add_teacher_caps() {
 			 $role->add_cap( 'read_private_classrooms' );
 			 $role->add_cap( 'edit_classroom' );
 			 $role->add_cap( 'edit_classrooms' );
+			 $role->add_cap( 'edit_others_classrooms' );
 			 $role->add_cap( 'edit_published_classrooms' );
 			 $role->add_cap( 'publish_classrooms' );
+			 $role->add_cap( 'publish_others_classrooms' );
 			 $role->add_cap( 'delete_private_classrooms' );
 			 $role->add_cap( 'delete_published_classrooms' );
+			 $role->add_cap( 'delete_others_classrooms' );
 
 	}
 }

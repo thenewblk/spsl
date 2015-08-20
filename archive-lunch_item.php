@@ -1,5 +1,3 @@
-<?php $url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); $url = $url['0']; ?>
-
 <div class="page_header" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/lunch_big.jpg)">
   <h2 class="page_title cm">What's For Lunch?</h2>
   <div class="bottom_bar"></div>
@@ -7,13 +5,6 @@
 
 <?php
   $now = new DateTime();
-  // $args = array(
-  //   'meta_key' => 'lunch_date',
-  //   'meta_value' => $now->format('Ymd'),
-  //   'post_type' => 'lunch_item',
-  //   'posts_per_page' => 2
-  // );
-  //
   $featured_lunch = new WP_Query(
           array(
             'post_type' => 'lunch_item',

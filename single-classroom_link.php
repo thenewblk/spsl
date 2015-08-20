@@ -24,42 +24,62 @@
     </div>
   </div>
   <div class="teacher">
+
     <?php
-
-      $author_id = get_the_author_meta('ID');
-      $author_badge = get_field('profile_picture', 'user_'. $author_id );
-
+      $username = get_field('teacher', get_field('classroom')->ID);
+      if ($username) {
+		    $userID = $username['ID'];
+        $author_badge = get_field('profile_picture', 'user_'. $userID );
+        $teacher_desc = get_the_author_meta( 'description', $userID);
     ?>
-    <img class="teacher_image" src="<?php echo $author_badge['url']; ?>" alt="<?php echo $author_badge['alt']; ?>" />
-    <p><?php echo get_the_author_meta( 'description'); ?></p>
+
+      <img class="teacher_image" src="<?php echo $author_badge['url']; ?>" alt="<?php echo $author_badge['alt']; ?>" />
+      <p><?php echo $teacher_desc; ?></p>
+      <?php } else {} ?>
+
     <div class="icons">
-      <a href="#" class="icon twitter">
+      <?php if ( get_field('twitter', get_field('classroom')->ID) ) { ?>
+      <a href="<?php echo get_field('twitter', get_field('classroom')->ID);?> " class="icon twitter">
         <img src="<?php echo get_template_directory_uri(); ?>/dist/images/twitter.svg" />
       </a>
-      <a href="#" class="icon facebook">
+      <?php } ?>
+      <?php if ( get_field('facebook', get_field('classroom')->ID) ) { ?>
+      <a href="<?php echo get_field('facebook', get_field('classroom')->ID);?> " class="icon facebook">
         <img src="<?php echo get_template_directory_uri(); ?>/dist/images/facebook.svg" />
       </a>
-      <a href="#" class="icon instagram">
+      <?php } ?>
+      <?php if ( get_field('instagram', get_field('classroom')->ID) ) { ?>
+      <a href="<?php echo get_field('instagram', get_field('classroom')->ID);?> " class="icon instagram">
         <img src="<?php echo get_template_directory_uri(); ?>/dist/images/instagram.svg" />
       </a>
+      <?php } ?>
     </div>
+
+
     <div class="teacher_links">
-      <a class="teacher_link cm" href="/classroom/<?php echo get_the_title( get_field('classroom')); ?>">Classroom <?php echo get_the_title( get_field('classroom')); ?> Home</a>
+      <a class="teacher_link cm" href="/classroom/<?php echo get_page_uri( get_field('classroom') ); ?>"><?php echo get_the_title( get_field('classroom')); ?> Home</a>
       <?php $loop = new WP_Query(
-        array(
-          'post_type' => 'classroom_link',
-          'posts_per_page' => -1
-        )
-      ); ?>
+          array(
+            'post_type' => 'classroom_link',
+            'posts_per_page' => -1,
+            'orderby' => 'meta_value_num',
+            'order'   => 'ASC',
+            'meta_key'  => 'classroom',
+            'meta_query' => array(
+              array(
+                  'key' => 'classroom',
+                  'value' => get_field('classroom')->ID,
+              )
+            )
+           )
+         ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-          <?php $post_object = get_field('classroom');
-            if( $post_object && (get_the_title( $post_object ) == get_the_title( $this_classroom ) ) ): ?>
-                <a class="teacher_link cm" href="<?php echo esc_url( get_permalink() ); ?>"><?php echo get_the_title($post); ?></a>
-                <?php wp_reset_postdata(); ?>
-            <?php endif; ?>
+          <a class="teacher_link cm" href="<?php echo esc_url( get_permalink() ); ?>"><?php echo get_the_title(); ?></a>
         <?php endwhile; ?>
       <?php wp_reset_query(); ?>
     </div>
+
+
     <div class="classroom_events">
       <?php $loop = new WP_Query(
           array(
