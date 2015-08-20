@@ -1,13 +1,12 @@
-
 <?php while ( have_posts() ) : the_post(); ?>
-  <?php $this_classroom = get_the_title($post); ?>
-<?php $url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); $url = $url['0']; ?>
-<div class="page_header" style="background-image: url(<?php echo $url ?>)">
-  <h2 class="page_title cm"><?php echo get_the_title($post);; ?><br /><?php echo get_the_author_meta( 'title' ); ?> <?php echo get_the_author_meta( 'display_name' ); ?></h2>
-  <div class="bottom_bar"></div>
-</div>
+  <?php $this_classroom = get_field("classroom"); ?>
+  <?php $url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); $url = $url['0']; ?>
+  <div class="page_header" style="background-image: url(<?php echo $url ?>)">
+    <h2 class="page_title cm"><?php echo  get_the_title($this_classroom); ?><br /><?php echo get_the_title($post); ?></h2>
+    <div class="bottom_bar"></div>
+  </div>
 
-<div class="martinez_container">
+  <div class="martinez_container">
   <div class="main">
     <div class="main_wrapper">
       <div class="color_band_headline">
@@ -46,26 +45,35 @@
     </div>
     <div class="teacher_links">
       <a class="teacher_link cm" href="/classroom/<?php echo get_the_title( get_field('classroom')); ?>">Classroom <?php echo get_the_title( get_field('classroom')); ?> Home</a>
-      <?php $loop = new WP_Query( array( 'post_type' => 'classroom_link', 'posts_per_page' => -1  ) ); ?>
+      <?php $loop = new WP_Query(
+        array(
+          'post_type' => 'classroom_link',
+          'posts_per_page' => -1
+        )
+      ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <?php $post_object = get_field('classroom');
-            if( $post_object && (get_the_title( $post_object ) == $this_classroom ) ): ?>
+            if( $post_object && (get_the_title( $post_object ) == get_the_title( $this_classroom ) ) ): ?>
                 <a class="teacher_link cm" href="<?php echo esc_url( get_permalink() ); ?>"><?php echo get_the_title($post); ?></a>
-                <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+                <?php wp_reset_postdata(); ?>
             <?php endif; ?>
         <?php endwhile; ?>
       <?php wp_reset_query(); ?>
-      <a class="teacher_link cm" href="#">Classroom Resources</a>
-      <a class="teacher_link cm" href="#">Homework Help</a>
-      <a class="teacher_link cm" href="#">Classroom Needs List</a>
-      <a class="teacher_link cm" href="#">Spelling List</a>
-      <a class="teacher_link cm" href="#">Archives</a>
     </div>
     <div class="classroom_events">
-      <?php $loop = new WP_Query( array( 'post_type' => 'event', 'posts_per_page' => 5 , 'orderby' => 'meta_value_num', 'order'   => 'ASC', 'meta_key'  => 'event_date' ) ); ?>
+      <?php $loop = new WP_Query(
+          array(
+            'post_type' => 'event',
+            'posts_per_page' => 5 ,
+            'orderby' => 'meta_value_num',
+            'order'   => 'ASC',
+            'meta_key'  => 'event_date'
+          )
+        ); ?>
+
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <?php $post_object = get_field('classroom');
-            if( $post_object && (get_the_title( $post_object ) == $this_classroom ) ): ?>
+            if( $post_object && (get_the_title( $post_object ) == get_the_title( $this_classroom ) ) ): ?>
                 <div class="classroom_event">
                   <div class="day"><?php $date = new DateTime(get_field( 'event_date' )); echo $date->format('l'); ?></div>
                   <div class="bottom">
@@ -76,7 +84,7 @@
                     <div class="title"><?php echo get_the_title($post); ?></div>
                   </div>
                 </div>
-                <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+                <?php wp_reset_postdata();  ?>
             <?php endif; ?>
         <?php endwhile; ?>
       <?php wp_reset_query(); ?>

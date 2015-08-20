@@ -23,19 +23,33 @@
           </g>
         </svg>
       </div>
+      <?php
 
-      <?php query_posts('post_type=homework&showposts=-1'); ?>
-    		<?php while ( have_posts() ) : the_post(); ?>
-          <?php $post_object = get_field('classroom');
-            if( $post_object && (get_the_title( $post_object ) == $this_classroom ) ): ?>
-                <div class="homework_entry">
-                  <h2 class="homework_date"><?php the_title(); ?></h2>
-                  <div class="homework_copy"><?php the_content(); ?></div>
-                </div>
-                <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-            <?php endif; ?>
-    		<?php endwhile; ?>
-      <?php wp_reset_query(); ?>
+        $homework_loop = new WP_Query( array(
+                  'post_type' => 'homework',
+                  'posts_per_page' => -1,
+                  'orderby' => 'meta_value_num',
+                  'order'   => 'ASC',
+                  'meta_key'  => 'grade',
+                  'meta_query' => array(
+                    array(
+                        'key' => 'grade',
+                        'value' => get_field('grade')->ID,
+                    )
+                  )
+                 )
+              );
+
+        if ($homework_loop->have_posts()) :?>
+
+        <?php while ($homework_loop->have_posts()) : $homework_loop->the_post(); ?>
+          <div class="homework_entry">
+            <h2 class="homework_date"><?php the_title(); ?></h2>
+            <div class="homework_copy"><?php the_content(); ?></div>
+          </div>
+        <?php endwhile;   ?>
+
+      <?php wp_reset_query(); else :  endif; ?>
 
       <!-- <a href="#" class="slim_button red"><span class="slim_wrapper">7th Grade Homework Blog</span></a> -->
       <div class="color_band_headline">

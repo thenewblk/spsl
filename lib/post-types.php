@@ -116,33 +116,7 @@ function my_lunch_date_orderby( $query ) {
     }
 }
 
-// add_action( 'pre_get_posts', __NAMESPACE__ . '\\manage_wp_posts_be_qe_pre_get_posts', 1 );
-// function manage_wp_posts_be_qe_pre_get_posts( $query ) {
-//
-//    /**
-//     * We only want our code to run in the main WP query
-//     * AND if an orderby query variable is designated.
-//     */
-//    if ( $query->is_main_query() && ( $orderby = $query->get( 'orderby' ) ) ) {
-//
-//       switch( $orderby ) {
-//          // If we're ordering by 'film_rating'
-//          case 'lunch_date':
-//             // set our query's meta_key, which is used for custom fields
-//             $query->set( 'meta_key', 'lunch_date' );
-//
-//             /**
-//              * Tell the query to order by our custom field/meta_key's
-//              * value, in this film rating's case: PG, PG-13, R, etc.
-//              *
-//              * If your meta value are numbers, change 'meta_value'
-//              * to 'meta_value_num'.
-//              */
-//             $query->set( 'orderby', 'meta_value' );
-//             break;
-//       }
-//    }
-// }
+
 
 function lunch_item_column_orderby( $vars ) {
     if ( isset( $vars['orderby'] ) && 'lunch_item' == $vars['orderby'] ) {
@@ -156,6 +130,50 @@ function lunch_item_column_orderby( $vars ) {
 }
 add_filter( 'request', __NAMESPACE__ . '\\lunch_item_column_orderby' );
 
+// Register Custom Post Type
+function grade() {
+
+	$labels = array(
+		'name'                => _x( 'Grades', 'Post Type General Name', 'text_domain' ),
+		'singular_name'       => _x( 'Grade', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'           => __( 'Grade', 'text_domain' ),
+		'name_admin_bar'      => __( 'Grade', 'text_domain' ),
+		'parent_item_colon'   => __( 'Parent Item:', 'text_domain' ),
+		'all_items'           => __( 'All Grades', 'text_domain' ),
+		'add_new_item'        => __( 'Add New Grade', 'text_domain' ),
+		'add_new'             => __( 'Add New Grade', 'text_domain' ),
+		'new_item'            => __( 'New Grade', 'text_domain' ),
+		'edit_item'           => __( 'Edit Grade', 'text_domain' ),
+		'update_item'         => __( 'Update Grade', 'text_domain' ),
+		'view_item'           => __( 'View Grade', 'text_domain' ),
+		'search_items'        => __( 'Search Grade', 'text_domain' ),
+		'not_found'           => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
+	);
+	$args = array(
+		'label'               => __( 'Grade', 'text_domain' ),
+		'description'         => __( 'Grade Description', 'text_domain' ),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'thumbnail'),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'menu_position'       => 1,
+		'show_in_admin_bar'   => true,
+		'show_in_nav_menus'   => true,
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => array('school_admin', 'school_admins'),
+    'map_meta_cap'        => true,
+		'rewrite'							=> array( 'slug' => 'grade' ),
+	);
+	register_post_type( 'grade', $args );
+
+}
+add_action( 'init', __NAMESPACE__ . '\\grade', 0 );
 
 // Register Custom Post Type
 function school_event() {
@@ -332,51 +350,6 @@ function event() {
 
 }
 add_action( 'init', __NAMESPACE__ . '\\event', 0 );
-
-// Register Custom Post Type
-function homeworkblog() {
-
-	$labels = array(
-		'name'                => _x( 'Homework Blog', 'Post Type General Name', 'text_domain' ),
-		'singular_name'       => _x( 'Homework Blog', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'           => __( 'Homework Blog', 'text_domain' ),
-		'name_admin_bar'      => __( 'Homework Blog', 'text_domain' ),
-		'parent_item_colon'   => __( 'Parent Homework Blog:', 'text_domain' ),
-		'all_items'           => __( 'All Homework Blog', 'text_domain' ),
-		'add_new_item'        => __( 'Add Homework Blog', 'text_domain' ),
-		'add_new'             => __( 'Add Homework Blog', 'text_domain' ),
-		'new_item'            => __( 'New Homework Blog', 'text_domain' ),
-		'edit_item'           => __( 'Edit Homework Blog', 'text_domain' ),
-		'update_item'         => __( 'Update Homework Blog', 'text_domain' ),
-		'view_item'           => __( 'View Homework Blog', 'text_domain' ),
-		'search_items'        => __( 'Search Homework Blog', 'text_domain' ),
-		'not_found'           => __( 'Not found', 'text_domain' ),
-		'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
-	);
-	$args = array(
-		'label'               => __( 'Homework Blog', 'text_domain' ),
-		'description'         => __( 'Homework Blog Description', 'text_domain' ),
-		'labels'              => $labels,
-		'supports'            => array( 'title', 'editor', 'thumbnail'),
-		'hierarchical'        => false,
-		'public'              => true,
-		'show_ui'             => true,
-		'show_in_menu'        => true,
-		'menu_position'       => 1,
-		'show_in_admin_bar'   => true,
-		'show_in_nav_menus'   => true,
-		'can_export'          => true,
-		'has_archive'         => true,
-		'exclude_from_search' => false,
-		'publicly_queryable'  => true,
-		// 'capability_type'     => 'page',
-    'map_meta_cap'        => true,
-	);
-	register_post_type( 'homeworkblog', $args );
-
-}
-add_action( 'init', __NAMESPACE__ . '\\homeworkblog', 0 );
-
 
 // Register Custom Post Type
 function classroom_link() {

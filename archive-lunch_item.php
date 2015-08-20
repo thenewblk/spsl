@@ -123,6 +123,8 @@
     </div>
     <?php endwhile;   ?>
     </div>
+  <?php wp_reset_query(); else :  endif; ?>
+
     <div class="next_week_wrapper">
       <div class="next_week"><a href="/lunch/?week=<?php echo $week ?>">Next Week</a></div>
     </div>
@@ -137,4 +139,3 @@
     </div>
     <?php } ?>
     <div class="clearfix"></div>
-  <?php wp_reset_query(); else :  endif; ?>
