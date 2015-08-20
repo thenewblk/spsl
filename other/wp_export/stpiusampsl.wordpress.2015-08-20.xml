@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.2.4" created="2015-08-18 15:09" -->
+<!-- generator="WordPress/4.2.4" created="2015-08-20 01:50" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>St Pius &#38; SL</title>
 	<link>http://localhost</link>
 	<description></description>
-	<pubDate>Tue, 18 Aug 2015 15:09:57 +0000</pubDate>
+	<pubDate>Thu, 20 Aug 2015 01:50:26 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://localhost</wp:base_site_url>
@@ -417,7 +417,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_55d0cf14dc516</wp:meta_key>
-			<wp:meta_value><![CDATA[a:11:{s:3:"key";s:19:"field_55d0cf14dc516";s:5:"label";s:10:"Lunch Date";s:4:"name";s:10:"lunch_date";s:4:"type";s:11:"date_picker";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:11:"date_format";s:6:"yymmdd";s:14:"display_format";s:8:"dd/mm/yy";s:9:"first_day";s:1:"1";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:0;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:11:{s:3:"key";s:19:"field_55d0cf14dc516";s:5:"label";s:10:"Lunch Date";s:4:"name";s:10:"lunch_date";s:4:"type";s:11:"date_picker";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:11:"date_format";s:6:"yymmdd";s:14:"display_format";s:8:"dd/mm/yy";s:9:"first_day";s:1:"0";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:0;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>rule</wp:meta_key>
@@ -521,7 +521,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_55ccaca426f50</wp:meta_key>
-			<wp:meta_value><![CDATA[a:12:{s:3:"key";s:19:"field_55ccaca426f50";s:5:"label";s:5:"Grade";s:4:"name";s:5:"grade";s:4:"type";s:6:"select";s:12:"instructions";s:0:"";s:8:"required";s:1:"1";s:7:"choices";a:16:{s:5:"Pre-K";s:5:"Pre-K";s:12:"Kindergarten";s:12:"Kindergarten";s:9:"1st Grade";s:9:"1st Grade";s:9:"2nd Grade";s:9:"2nd Grade";s:9:"3rd Grade";s:9:"3rd Grade";s:9:"4th Grade";s:9:"4th Grade";s:9:"5th Grade";s:9:"5th Grade";s:9:"6th Grade";s:9:"6th Grade";s:9:"7th Grade";s:9:"7th Grade";s:9:"8th Grade";s:9:"8th Grade";s:3:"Art";s:3:"Art";s:5:"Music";s:5:"Music";s:4:"P.E.";s:4:"P.E.";s:7:"Library";s:7:"Library";s:12:"Computer Lab";s:12:"Computer Lab";s:5:"Other";s:5:"Other";}s:13:"default_value";s:0:"";s:10:"allow_null";s:1:"0";s:8:"multiple";s:1:"0";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:0;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:12:{s:3:"key";s:19:"field_55ccaca426f50";s:5:"label";s:5:"Grade";s:4:"name";s:5:"grade";s:4:"type";s:11:"post_object";s:12:"instructions";s:0:"";s:8:"required";s:1:"1";s:9:"post_type";a:1:{i:0;s:5:"grade";}s:8:"taxonomy";a:1:{i:0;s:3:"all";}s:10:"allow_null";s:1:"0";s:8:"multiple";s:1:"0";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:0;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_55d16e884e52c</wp:meta_key>
@@ -534,6 +534,10 @@
 		<wp:postmeta>
 			<wp:meta_key>field_55d16ea24e52e</wp:meta_key>
 			<wp:meta_value><![CDATA[a:14:{s:3:"key";s:19:"field_55d16ea24e52e";s:5:"label";s:9:"Instagram";s:4:"name";s:9:"instagram";s:4:"type";s:4:"text";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:10:"formatting";s:4:"html";s:9:"maxlength";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_55ccaca426f50";s:8:"operator";s:2:"==";s:5:"value";s:5:"Pre-K";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:3;}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>field_55d4f8f39ab0e</wp:meta_key>
+			<wp:meta_value><![CDATA[a:11:{s:3:"key";s:19:"field_55d4f8f39ab0e";s:5:"label";s:7:"Teacher";s:4:"name";s:7:"teacher";s:4:"type";s:4:"user";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:4:"role";a:1:{i:0;s:7:"teacher";}s:10:"field_type";s:6:"select";s:10:"allow_null";s:1:"0";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:4;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>rule</wp:meta_key>
@@ -583,10 +587,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_55d23e73d62de</wp:meta_key>
-			<wp:meta_value><![CDATA[a:12:{s:3:"key";s:19:"field_55d23e73d62de";s:5:"label";s:5:"Grade";s:4:"name";s:5:"grade";s:4:"type";s:6:"select";s:12:"instructions";s:90:"5th Grade : 5th Grade
-6th Grade : 6th Grade
-7th Grade : 7th Grade
-8th Grade : 8th Grade";s:8:"required";s:1:"1";s:7:"choices";a:0:{}s:13:"default_value";s:0:"";s:10:"allow_null";s:1:"0";s:8:"multiple";s:1:"0";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:1;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:12:{s:3:"key";s:19:"field_55d23e73d62de";s:5:"label";s:5:"Grade";s:4:"name";s:5:"grade";s:4:"type";s:11:"post_object";s:12:"instructions";s:0:"";s:8:"required";s:1:"1";s:9:"post_type";a:1:{i:0;s:5:"grade";}s:8:"taxonomy";a:1:{i:0;s:3:"all";}s:10:"allow_null";s:1:"0";s:8:"multiple";s:1:"0";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"1";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:1;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>rule</wp:meta_key>
@@ -721,37 +722,6 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>11133964_10204561675064749_3245252345595524950_o</title>
-		<link>http://localhost/?attachment_id=103</link>
-		<pubDate>Fri, 14 Aug 2015 15:00:41 +0000</pubDate>
-		<dc:creator><![CDATA[alex]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/wp-content/uploads/2015/08/11133964_10204561675064749_3245252345595524950_o.jpg</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>103</wp:post_id>
-		<wp:post_date>2015-08-14 15:00:41</wp:post_date>
-		<wp:post_date_gmt>2015-08-14 15:00:41</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>11133964_10204561675064749_3245252345595524950_o</wp:post_name>
-		<wp:status>inherit</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>attachment</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url>http://localhost/wp-content/uploads/2015/08/11133964_10204561675064749_3245252345595524950_o.jpg</wp:attachment_url>
-		<wp:postmeta>
-			<wp:meta_key>_wp_attached_file</wp:meta_key>
-			<wp:meta_value><![CDATA[2015/08/11133964_10204561675064749_3245252345595524950_o.jpg]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1366;s:6:"height";i:1366;s:4:"file";s:60:"2015/08/11133964_10204561675064749_3245252345595524950_o.jpg";s:5:"sizes";a:3:{s:9:"thumbnail";a:4:{s:4:"file";s:60:"11133964_10204561675064749_3245252345595524950_o-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:60:"11133964_10204561675064749_3245252345595524950_o-300x300.jpg";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:62:"11133964_10204561675064749_3245252345595524950_o-1024x1024.jpg";s:5:"width";i:1024;s:6:"height";i:1024;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title>Classroom Event</title>
 		<link>http://localhost/?acf=acf_classroom-event</link>
 		<pubDate>Mon, 17 Aug 2015 04:38:47 +0000</pubDate>
@@ -828,7 +798,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_55d16ecb36634</wp:meta_key>
-			<wp:meta_value><![CDATA[a:12:{s:3:"key";s:19:"field_55d16ecb36634";s:5:"label";s:9:"Classroom";s:4:"name";s:9:"classroom";s:4:"type";s:11:"post_object";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:9:"post_type";a:1:{i:0;s:9:"classroom";}s:8:"taxonomy";a:1:{i:0;s:3:"all";}s:10:"allow_null";s:1:"0";s:8:"multiple";s:1:"0";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:0;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:12:{s:3:"key";s:19:"field_55d16ecb36634";s:5:"label";s:9:"Classroom";s:4:"name";s:9:"classroom";s:4:"type";s:11:"post_object";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:9:"post_type";a:1:{i:0;s:9:"classroom";}s:8:"taxonomy";a:1:{i:0;s:3:"all";}s:10:"allow_null";s:1:"1";s:8:"multiple";s:1:"0";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:0;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>position</wp:meta_key>
@@ -862,7 +832,7 @@
 		<wp:comment_status>closed</wp:comment_status>
 		<wp:ping_status>closed</wp:ping_status>
 		<wp:post_name>acf_homework-blog</wp:post_name>
-		<wp:status>publish</wp:status>
+		<wp:status>trash</wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>acf</wp:post_type>
@@ -891,6 +861,60 @@
 		<wp:postmeta>
 			<wp:meta_key>rule</wp:meta_key>
 			<wp:meta_value><![CDATA[a:5:{s:5:"param";s:9:"post_type";s:8:"operator";s:2:"==";s:5:"value";s:12:"homeworkblog";s:8:"order_no";i:0;s:8:"group_no";i:0;}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_trash_meta_status</wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_trash_meta_time</wp:meta_key>
+			<wp:meta_value><![CDATA[1440006237]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>For Parents</title>
+		<link>http://localhost/?acf=acf_for-parents</link>
+		<pubDate>Tue, 18 Aug 2015 15:23:00 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=acf&#038;p=141</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>141</wp:post_id>
+		<wp:post_date>2015-08-18 15:23:00</wp:post_date>
+		<wp:post_date_gmt>2015-08-18 15:23:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>acf_for-parents</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>acf</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>field_55d34d7c10280</wp:meta_key>
+			<wp:meta_value><![CDATA[a:11:{s:3:"key";s:19:"field_55d34d7c10280";s:5:"label";s:15:"Principal Words";s:4:"name";s:15:"principal_words";s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:7:"toolbar";s:4:"full";s:12:"media_upload";s:3:"yes";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:0;}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>rule</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"param";s:4:"page";s:8:"operator";s:2:"==";s:5:"value";s:3:"114";s:8:"order_no";i:0;s:8:"group_no";i:0;}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>position</wp:meta_key>
+			<wp:meta_value><![CDATA[normal]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>layout</wp:meta_key>
+			<wp:meta_value><![CDATA[no_box]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>hide_on_screen</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -936,112 +960,6 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Pizza on Bun</title>
-		<link>http://localhost/lunch/66/</link>
-		<pubDate>Mon, 10 Aug 2015 22:41:14 +0000</pubDate>
-		<dc:creator><![CDATA[alex]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/?post_type=lunch_item&#038;p=66</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>66</wp:post_id>
-		<wp:post_date>2015-08-10 22:41:14</wp:post_date>
-		<wp:post_date_gmt>2015-08-10 22:41:14</wp:post_date_gmt>
-		<wp:comment_status>closed</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>66</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>lunch_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>event</wp:meta_key>
-			<wp:meta_value><![CDATA[65]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_event</wp:meta_key>
-			<wp:meta_value><![CDATA[field_55c9283db1486]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_</wp:meta_key>
-			<wp:meta_value><![CDATA[field_55c9285cb1487]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>lunch_date</wp:meta_key>
-			<wp:meta_value><![CDATA[20150819]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_lunch_date</wp:meta_key>
-			<wp:meta_value><![CDATA[field_55d0cf14dc516]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Admin Homework</title>
-		<link>http://localhost/homework/admin-homework/</link>
-		<pubDate>Tue, 11 Aug 2015 17:57:01 +0000</pubDate>
-		<dc:creator><![CDATA[alex]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/?post_type=homework&#038;p=71</guid>
-		<description></description>
-		<content:encoded><![CDATA[<strong>Math - </strong>Do your Homework]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>71</wp:post_id>
-		<wp:post_date>2015-08-11 17:57:01</wp:post_date>
-		<wp:post_date_gmt>2015-08-11 17:57:01</wp:post_date_gmt>
-		<wp:comment_status>closed</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>admin-homework</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>homework</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>classroom</wp:meta_key>
-			<wp:meta_value><![CDATA[92]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_classroom</wp:meta_key>
-			<wp:meta_value><![CDATA[field_55cbb35c03bec]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Other Homework</title>
-		<link>http://localhost/homework/other-homework/</link>
-		<pubDate>Tue, 11 Aug 2015 19:37:29 +0000</pubDate>
-		<dc:creator><![CDATA[6th_grade_alex]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/?post_type=homework&#038;p=72</guid>
-		<description></description>
-		<content:encoded><![CDATA[<a href="http://localhost/wp-content/uploads/2015/08/FF-Wetlands-Horiz.pdf">FF Wetlands Horiz</a>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>72</wp:post_id>
-		<wp:post_date>2015-08-11 19:37:29</wp:post_date>
-		<wp:post_date_gmt>2015-08-11 19:37:29</wp:post_date_gmt>
-		<wp:comment_status>closed</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>other-homework</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>homework</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title>6c</title>
 		<link>http://localhost/classroom/6c/</link>
 		<pubDate>Wed, 12 Aug 2015 21:31:44 +0000</pubDate>
@@ -1076,7 +994,7 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>6a</title>
+		<title>4a</title>
 		<link>http://localhost/classroom/6a/</link>
 		<pubDate>Wed, 12 Aug 2015 21:31:51 +0000</pubDate>
 		<dc:creator><![CDATA[alex]]></dc:creator>
@@ -1102,7 +1020,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>grade</wp:meta_key>
-			<wp:meta_value><![CDATA[6th Grade]]></wp:meta_value>
+			<wp:meta_value><![CDATA[152]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_grade</wp:meta_key>
@@ -1135,6 +1053,14 @@
 		<wp:postmeta>
 			<wp:meta_key>_instagram</wp:meta_key>
 			<wp:meta_value><![CDATA[field_55d16ea24e52e]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>teacher</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_teacher</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55d4f8f39ab0e]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -1206,75 +1132,34 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Tomorrow</title>
-		<link>http://localhost/homework/tomorrow/</link>
-		<pubDate>Fri, 14 Aug 2015 16:52:32 +0000</pubDate>
+		<title>11133964_10204561675064749_3245252345595524950_o</title>
+		<link>http://localhost/?attachment_id=103</link>
+		<pubDate>Fri, 14 Aug 2015 15:00:41 +0000</pubDate>
 		<dc:creator><![CDATA[alex]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/?post_type=homework&#038;p=104</guid>
+		<guid isPermaLink="false">http://localhost/wp-content/uploads/2015/08/11133964_10204561675064749_3245252345595524950_o.jpg</guid>
 		<description></description>
-		<content:encoded><![CDATA[asdfasdfa]]></content:encoded>
+		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>104</wp:post_id>
-		<wp:post_date>2015-08-14 16:52:32</wp:post_date>
-		<wp:post_date_gmt>2015-08-14 16:52:32</wp:post_date_gmt>
-		<wp:comment_status>closed</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>tomorrow</wp:post_name>
-		<wp:status>publish</wp:status>
+		<wp:post_id>103</wp:post_id>
+		<wp:post_date>2015-08-14 15:00:41</wp:post_date>
+		<wp:post_date_gmt>2015-08-14 15:00:41</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>11133964_10204561675064749_3245252345595524950_o</wp:post_name>
+		<wp:status>inherit</wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>homework</wp:post_type>
+		<wp:post_type>attachment</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://localhost/wp-content/uploads/2015/08/11133964_10204561675064749_3245252345595524950_o.jpg</wp:attachment_url>
 		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2015/08/11133964_10204561675064749_3245252345595524950_o.jpg]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key>classroom</wp:meta_key>
-			<wp:meta_value><![CDATA[92]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_classroom</wp:meta_key>
-			<wp:meta_value><![CDATA[field_55cbb35c03bec]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Hot Dog on Bun</title>
-		<link>http://localhost/lunch/hot-dog-on-bun/</link>
-		<pubDate>Mon, 17 Aug 2015 01:13:20 +0000</pubDate>
-		<dc:creator><![CDATA[alex]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/?post_type=lunch_item&#038;p=118</guid>
-		<description></description>
-		<content:encoded><![CDATA[Hot dog
-
-bun
-
-sides]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>118</wp:post_id>
-		<wp:post_date>2015-08-17 01:13:20</wp:post_date>
-		<wp:post_date_gmt>2015-08-17 01:13:20</wp:post_date_gmt>
-		<wp:comment_status>closed</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>hot-dog-on-bun</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>lunch_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>lunch_date</wp:meta_key>
-			<wp:meta_value><![CDATA[20150817]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_lunch_date</wp:meta_key>
-			<wp:meta_value><![CDATA[field_55d0cf14dc516]]></wp:meta_value>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1366;s:6:"height";i:1366;s:4:"file";s:60:"2015/08/11133964_10204561675064749_3245252345595524950_o.jpg";s:5:"sizes";a:3:{s:9:"thumbnail";a:4:{s:4:"file";s:60:"11133964_10204561675064749_3245252345595524950_o-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:60:"11133964_10204561675064749_3245252345595524950_o-300x300.jpg";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:62:"11133964_10204561675064749_3245252345595524950_o-1024x1024.jpg";s:5:"width";i:1024;s:6:"height";i:1024;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -1346,7 +1231,7 @@ sides]]></content:encoded>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>classroom</wp:meta_key>
-			<wp:meta_value><![CDATA[92]]></wp:meta_value>
+			<wp:meta_value><![CDATA[134]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_classroom</wp:meta_key>
@@ -1355,44 +1240,6 @@ sides]]></content:encoded>
 		<wp:postmeta>
 			<wp:meta_key>_wp_old_slug</wp:meta_key>
 			<wp:meta_value><![CDATA[awesome-linka]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Sixth Grade</title>
-		<link>http://localhost/homeworkblog/sixth-grade/</link>
-		<pubDate>Mon, 17 Aug 2015 15:08:41 +0000</pubDate>
-		<dc:creator><![CDATA[alex]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/?post_type=homeworkblog&#038;p=127</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>127</wp:post_id>
-		<wp:post_date>2015-08-17 15:08:41</wp:post_date>
-		<wp:post_date_gmt>2015-08-17 15:08:41</wp:post_date_gmt>
-		<wp:comment_status>closed</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>sixth-grade</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>homeworkblog</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>grade</wp:meta_key>
-			<wp:meta_value><![CDATA[6th Grade]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_grade</wp:meta_key>
-			<wp:meta_value><![CDATA[field_55d1f4a0bc298]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[sixth-grade-blog]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -1488,54 +1335,6 @@ sides]]></content:encoded>
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Tomorrow Tuesday</title>
-		<link>http://localhost/homework/tomorrow-tuesday/</link>
-		<pubDate>Mon, 17 Aug 2015 15:39:37 +0000</pubDate>
-		<dc:creator><![CDATA[mr_linderman]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/?post_type=homework&#038;p=130</guid>
-		<description></description>
-		<content:encoded><![CDATA[<strong>Math</strong> - Stuff
-
-&nbsp;]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>130</wp:post_id>
-		<wp:post_date>2015-08-17 15:39:37</wp:post_date>
-		<wp:post_date_gmt>2015-08-17 15:39:37</wp:post_date_gmt>
-		<wp:comment_status>closed</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>tomorrow-tuesday</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>homework</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[3]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>classroom</wp:meta_key>
-			<wp:meta_value><![CDATA[128]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_classroom</wp:meta_key>
-			<wp:meta_value><![CDATA[field_55cbb35c03bec]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>due_date</wp:meta_key>
-			<wp:meta_value><![CDATA[20150818]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_due_date</wp:meta_key>
-			<wp:meta_value><![CDATA[field_55ce1cf066410]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[tomorrow-tuesdayt]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title>4b</title>
 		<link>http://localhost/classroom/4b/</link>
 		<pubDate>Mon, 17 Aug 2015 16:09:03 +0000</pubDate>
@@ -1595,50 +1394,6 @@ sides]]></content:encoded>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
 			<wp:meta_value><![CDATA[20]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Today&#039;s Homework</title>
-		<link>http://localhost/homework/todays-homework/</link>
-		<pubDate>Mon, 17 Aug 2015 16:13:30 +0000</pubDate>
-		<dc:creator><![CDATA[6th_grade_alex]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/?post_type=homework&#038;p=135</guid>
-		<description></description>
-		<content:encoded><![CDATA[Math,
-
-reading]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>135</wp:post_id>
-		<wp:post_date>2015-08-17 16:13:30</wp:post_date>
-		<wp:post_date_gmt>2015-08-17 16:13:30</wp:post_date_gmt>
-		<wp:comment_status>closed</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>todays-homework</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>homework</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>classroom</wp:meta_key>
-			<wp:meta_value><![CDATA[134]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_classroom</wp:meta_key>
-			<wp:meta_value><![CDATA[field_55cbb35c03bec]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>due_date</wp:meta_key>
-			<wp:meta_value><![CDATA[20150818]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_due_date</wp:meta_key>
-			<wp:meta_value><![CDATA[field_55ce1cf066410]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -1723,6 +1478,884 @@ asdfasdf]]></content:encoded>
 		<wp:postmeta>
 			<wp:meta_key>_classroom</wp:meta_key>
 			<wp:meta_value><![CDATA[field_55d165f5713d2]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>5th Grade</title>
+		<link>http://localhost/grade/5th-grade/</link>
+		<pubDate>Wed, 19 Aug 2015 17:44:14 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=grade&#038;p=147</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>147</wp:post_id>
+		<wp:post_date>2015-08-19 17:44:14</wp:post_date>
+		<wp:post_date_gmt>2015-08-19 17:44:14</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>5th-grade</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>grade</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>6th Grade</title>
+		<link>http://localhost/grade/6th-grade/</link>
+		<pubDate>Wed, 19 Aug 2015 17:44:23 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=grade&#038;p=148</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>148</wp:post_id>
+		<wp:post_date>2015-08-19 17:44:23</wp:post_date>
+		<wp:post_date_gmt>2015-08-19 17:44:23</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>6th-grade</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>grade</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>7th Grade</title>
+		<link>http://localhost/grade/7th-grade/</link>
+		<pubDate>Wed, 19 Aug 2015 17:44:32 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=grade&#038;p=149</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>149</wp:post_id>
+		<wp:post_date>2015-08-19 17:44:32</wp:post_date>
+		<wp:post_date_gmt>2015-08-19 17:44:32</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>7th-grade</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>grade</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>8th Grade</title>
+		<link>http://localhost/grade/8th-grade/</link>
+		<pubDate>Wed, 19 Aug 2015 17:44:41 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=grade&#038;p=150</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>150</wp:post_id>
+		<wp:post_date>2015-08-19 17:44:41</wp:post_date>
+		<wp:post_date_gmt>2015-08-19 17:44:41</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>8th-grade</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>grade</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>4th Grade</title>
+		<link>http://localhost/grade/4th-grade/</link>
+		<pubDate>Wed, 19 Aug 2015 22:24:50 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=grade&#038;p=152</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>152</wp:post_id>
+		<wp:post_date>2015-08-19 22:24:50</wp:post_date>
+		<wp:post_date_gmt>2015-08-19 22:24:50</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>4th-grade</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>grade</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>P.E.</title>
+		<link>http://localhost/grade/p-e/</link>
+		<pubDate>Wed, 19 Aug 2015 22:24:59 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=grade&#038;p=154</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>154</wp:post_id>
+		<wp:post_date>2015-08-19 22:24:59</wp:post_date>
+		<wp:post_date_gmt>2015-08-19 22:24:59</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>p-e</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>grade</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Preschool/Pre-K</title>
+		<link>http://localhost/grade/preschoolpre-k/</link>
+		<pubDate>Wed, 19 Aug 2015 22:29:53 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=grade&#038;p=155</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>155</wp:post_id>
+		<wp:post_date>2015-08-19 22:29:53</wp:post_date>
+		<wp:post_date_gmt>2015-08-19 22:29:53</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>preschoolpre-k</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>grade</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Pizza on Bun</title>
+		<link>http://localhost/lunch/66/</link>
+		<pubDate>Mon, 10 Aug 2015 22:41:14 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=lunch_item&#038;p=66</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>66</wp:post_id>
+		<wp:post_date>2015-08-10 22:41:14</wp:post_date>
+		<wp:post_date_gmt>2015-08-10 22:41:14</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>66</wp:post_name>
+		<wp:status>trash</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>lunch_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>event</wp:meta_key>
+			<wp:meta_value><![CDATA[65]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_event</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55c9283db1486]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55c9285cb1487]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>lunch_date</wp:meta_key>
+			<wp:meta_value><![CDATA[20150820]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_lunch_date</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55d0cf14dc516]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_trash_meta_status</wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_trash_meta_time</wp:meta_key>
+			<wp:meta_value><![CDATA[1439930754]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Admin Homework</title>
+		<link>http://localhost/homework/admin-homework/</link>
+		<pubDate>Tue, 11 Aug 2015 17:57:01 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=homework&#038;p=71</guid>
+		<description></description>
+		<content:encoded><![CDATA[<strong>Math - </strong>Do your Homework]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>71</wp:post_id>
+		<wp:post_date>2015-08-11 17:57:01</wp:post_date>
+		<wp:post_date_gmt>2015-08-11 17:57:01</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>admin-homework</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>homework</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>classroom</wp:meta_key>
+			<wp:meta_value><![CDATA[92]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_classroom</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55cbb35c03bec]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>due_date</wp:meta_key>
+			<wp:meta_value><![CDATA[20150821]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_due_date</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55ce1cf066410]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>grade</wp:meta_key>
+			<wp:meta_value><![CDATA[152]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_grade</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55d23e73d62de]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Other Homework</title>
+		<link>http://localhost/homework/other-homework/</link>
+		<pubDate>Tue, 11 Aug 2015 19:37:29 +0000</pubDate>
+		<dc:creator><![CDATA[6th_grade_alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=homework&#038;p=72</guid>
+		<description></description>
+		<content:encoded><![CDATA[<a href="http://localhost/wp-content/uploads/2015/08/FF-Wetlands-Horiz.pdf">FF Wetlands Horiz</a>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>72</wp:post_id>
+		<wp:post_date>2015-08-11 19:37:29</wp:post_date>
+		<wp:post_date_gmt>2015-08-11 19:37:29</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>other-homework</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>homework</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Tomorrow</title>
+		<link>http://localhost/homework/tomorrow/</link>
+		<pubDate>Fri, 14 Aug 2015 16:52:32 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=homework&#038;p=104</guid>
+		<description></description>
+		<content:encoded><![CDATA[asdfasdfa]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>104</wp:post_id>
+		<wp:post_date>2015-08-14 16:52:32</wp:post_date>
+		<wp:post_date_gmt>2015-08-14 16:52:32</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>tomorrow</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>homework</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>classroom</wp:meta_key>
+			<wp:meta_value><![CDATA[92]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_classroom</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55cbb35c03bec]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>due_date</wp:meta_key>
+			<wp:meta_value><![CDATA[20150819]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_due_date</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55ce1cf066410]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>grade</wp:meta_key>
+			<wp:meta_value><![CDATA[152]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_grade</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55d23e73d62de]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Hot Dog on Bun</title>
+		<link>http://localhost/lunch/hot-dog-on-bun/</link>
+		<pubDate>Mon, 17 Aug 2015 01:13:20 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=lunch_item&#038;p=118</guid>
+		<description></description>
+		<content:encoded><![CDATA[Hot dog
+
+bun
+
+sides]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>118</wp:post_id>
+		<wp:post_date>2015-08-17 01:13:20</wp:post_date>
+		<wp:post_date_gmt>2015-08-17 01:13:20</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>hot-dog-on-bun</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>lunch_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>lunch_date</wp:meta_key>
+			<wp:meta_value><![CDATA[20150802]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_lunch_date</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55d0cf14dc516]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Tomorrow Tuesday</title>
+		<link>http://localhost/homework/tomorrow-tuesday/</link>
+		<pubDate>Mon, 17 Aug 2015 15:39:37 +0000</pubDate>
+		<dc:creator><![CDATA[mr_linderman]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=homework&#038;p=130</guid>
+		<description></description>
+		<content:encoded><![CDATA[<strong>Math</strong> - Stuff
+
+&nbsp;]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>130</wp:post_id>
+		<wp:post_date>2015-08-17 15:39:37</wp:post_date>
+		<wp:post_date_gmt>2015-08-17 15:39:37</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>tomorrow-tuesday</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>homework</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[3]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>classroom</wp:meta_key>
+			<wp:meta_value><![CDATA[128]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_classroom</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55cbb35c03bec]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>due_date</wp:meta_key>
+			<wp:meta_value><![CDATA[20150818]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_due_date</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55ce1cf066410]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[tomorrow-tuesdayt]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Hot Dog</title>
+		<link>http://localhost/lunch/hot-dog/</link>
+		<pubDate>Mon, 17 Aug 2015 15:44:52 +0000</pubDate>
+		<dc:creator><![CDATA[mr_linderman]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=lunch_item&#038;p=132</guid>
+		<description></description>
+		<content:encoded><![CDATA[Other Sides]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>132</wp:post_id>
+		<wp:post_date>2015-08-17 15:44:52</wp:post_date>
+		<wp:post_date_gmt>2015-08-17 15:44:52</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>hot-dog</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>lunch_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>lunch_date</wp:meta_key>
+			<wp:meta_value><![CDATA[20150828]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_lunch_date</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55d0cf14dc516]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Today&#039;s Homework</title>
+		<link>http://localhost/homework/todays-homework/</link>
+		<pubDate>Mon, 17 Aug 2015 16:13:30 +0000</pubDate>
+		<dc:creator><![CDATA[6th_grade_alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=homework&#038;p=135</guid>
+		<description></description>
+		<content:encoded><![CDATA[Math,
+
+reading]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>135</wp:post_id>
+		<wp:post_date>2015-08-17 16:13:30</wp:post_date>
+		<wp:post_date_gmt>2015-08-17 16:13:30</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>todays-homework</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>homework</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>classroom</wp:meta_key>
+			<wp:meta_value><![CDATA[134]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_classroom</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55cbb35c03bec]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>due_date</wp:meta_key>
+			<wp:meta_value><![CDATA[20150818]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_due_date</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55ce1cf066410]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Hot Dog</title>
+		<link>http://localhost/lunch/hot-dog-2/</link>
+		<pubDate>Mon, 17 Aug 2015 16:29:14 +0000</pubDate>
+		<dc:creator><![CDATA[6th_grade_alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=lunch_item&#038;p=139</guid>
+		<description></description>
+		<content:encoded><![CDATA[Side thing]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>139</wp:post_id>
+		<wp:post_date>2015-08-17 16:29:14</wp:post_date>
+		<wp:post_date_gmt>2015-08-17 16:29:14</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>hot-dog-2</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>lunch_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>lunch_date</wp:meta_key>
+			<wp:meta_value><![CDATA[20150819]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_lunch_date</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55d0cf14dc516]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Good Foods</title>
+		<link>http://localhost/lunch/good-foods/</link>
+		<pubDate>Tue, 18 Aug 2015 19:21:10 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=lunch_item&#038;p=143</guid>
+		<description></description>
+		<content:encoded><![CDATA[So Good.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>143</wp:post_id>
+		<wp:post_date>2015-08-18 19:21:10</wp:post_date>
+		<wp:post_date_gmt>2015-08-18 19:21:10</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>good-foods</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>lunch_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>lunch_date</wp:meta_key>
+			<wp:meta_value><![CDATA[20150820]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_lunch_date</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55d0cf14dc516]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Pizza on Bun</title>
+		<link>http://localhost/lunch/more-of-that-good-food/</link>
+		<pubDate>Tue, 18 Aug 2015 19:21:36 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=lunch_item&#038;p=144</guid>
+		<description></description>
+		<content:encoded><![CDATA[And a Crispito.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>144</wp:post_id>
+		<wp:post_date>2015-08-18 19:21:36</wp:post_date>
+		<wp:post_date_gmt>2015-08-18 19:21:36</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>more-of-that-good-food</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>lunch_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>lunch_date</wp:meta_key>
+			<wp:meta_value><![CDATA[20150826]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_lunch_date</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55d0cf14dc516]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Things</title>
+		<link>http://localhost/lunch/things/</link>
+		<pubDate>Tue, 18 Aug 2015 19:30:19 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=lunch_item&#038;p=145</guid>
+		<description></description>
+		<content:encoded><![CDATA[and stuff]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>145</wp:post_id>
+		<wp:post_date>2015-08-18 19:30:19</wp:post_date>
+		<wp:post_date_gmt>2015-08-18 19:30:19</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>things</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>lunch_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>lunch_date</wp:meta_key>
+			<wp:meta_value><![CDATA[20150818]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_lunch_date</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55d0cf14dc516]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Pizza and Bun</title>
+		<link>http://localhost/lunch/pizza-and-bun/</link>
+		<pubDate>Tue, 18 Aug 2015 20:46:08 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=lunch_item&#038;p=146</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>146</wp:post_id>
+		<wp:post_date>2015-08-18 20:46:08</wp:post_date>
+		<wp:post_date_gmt>2015-08-18 20:46:08</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>pizza-and-bun</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>lunch_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>lunch_date</wp:meta_key>
+			<wp:meta_value><![CDATA[20150817]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_lunch_date</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55d0cf14dc516]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>1st Grade</title>
+		<link>http://localhost/grade/1st-grade/</link>
+		<pubDate>Wed, 19 Aug 2015 22:30:06 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=grade&#038;p=156</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>156</wp:post_id>
+		<wp:post_date>2015-08-19 22:30:06</wp:post_date>
+		<wp:post_date_gmt>2015-08-19 22:30:06</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>1st-grade</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>grade</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>2nd Grade</title>
+		<link>http://localhost/grade/2nd-grade/</link>
+		<pubDate>Wed, 19 Aug 2015 22:30:14 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=grade&#038;p=157</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>157</wp:post_id>
+		<wp:post_date>2015-08-19 22:30:14</wp:post_date>
+		<wp:post_date_gmt>2015-08-19 22:30:14</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>2nd-grade</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>grade</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>3rd Grade</title>
+		<link>http://localhost/grade/3rd-grade/</link>
+		<pubDate>Wed, 19 Aug 2015 22:30:21 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=grade&#038;p=158</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>158</wp:post_id>
+		<wp:post_date>2015-08-19 22:30:21</wp:post_date>
+		<wp:post_date_gmt>2015-08-19 22:30:21</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>3rd-grade</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>grade</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Art</title>
+		<link>http://localhost/grade/art/</link>
+		<pubDate>Wed, 19 Aug 2015 22:30:27 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=grade&#038;p=159</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>159</wp:post_id>
+		<wp:post_date>2015-08-19 22:30:27</wp:post_date>
+		<wp:post_date_gmt>2015-08-19 22:30:27</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>art</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>grade</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Library</title>
+		<link>http://localhost/grade/library/</link>
+		<pubDate>Wed, 19 Aug 2015 22:30:37 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=grade&#038;p=160</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>160</wp:post_id>
+		<wp:post_date>2015-08-19 22:30:37</wp:post_date>
+		<wp:post_date_gmt>2015-08-19 22:30:37</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>library</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>grade</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Computer Lab</title>
+		<link>http://localhost/grade/computer-lab/</link>
+		<pubDate>Wed, 19 Aug 2015 22:31:11 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=grade&#038;p=162</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>162</wp:post_id>
+		<wp:post_date>2015-08-19 22:31:11</wp:post_date>
+		<wp:post_date_gmt>2015-08-19 22:31:11</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>computer-lab</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>grade</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Music</title>
+		<link>http://localhost/grade/music/</link>
+		<pubDate>Wed, 19 Aug 2015 22:31:47 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=grade&#038;p=163</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>163</wp:post_id>
+		<wp:post_date>2015-08-19 22:31:47</wp:post_date>
+		<wp:post_date_gmt>2015-08-19 22:31:47</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>music</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>grade</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -2460,196 +3093,6 @@ The school serves two parishes, St. Pius X on 69th and Blondo Streets and St. Le
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>We went on a Field Trip</title>
-		<link>http://localhost/newsletter/we-went-on-a-field-trip-2/</link>
-		<pubDate>Mon, 17 Aug 2015 15:41:06 +0000</pubDate>
-		<dc:creator><![CDATA[mr_linderman]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/?post_type=newsletter&#038;p=131</guid>
-		<description></description>
-		<content:encoded><![CDATA[It Was cool]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>131</wp:post_id>
-		<wp:post_date>2015-08-17 15:41:06</wp:post_date>
-		<wp:post_date_gmt>2015-08-17 15:41:06</wp:post_date_gmt>
-		<wp:comment_status>closed</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>we-went-on-a-field-trip-2</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>newsletter</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[3]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>classroom</wp:meta_key>
-			<wp:meta_value><![CDATA[128]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_classroom</wp:meta_key>
-			<wp:meta_value><![CDATA[field_55ccf7cd2627f]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>featured_image</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_featured_image</wp:meta_key>
-			<wp:meta_value><![CDATA[field_55ccf94ffe48f]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Hot Dog</title>
-		<link>http://localhost/lunch/hot-dog/</link>
-		<pubDate>Mon, 17 Aug 2015 15:44:52 +0000</pubDate>
-		<dc:creator><![CDATA[mr_linderman]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/?post_type=lunch_item&#038;p=132</guid>
-		<description></description>
-		<content:encoded><![CDATA[Other Sides]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>132</wp:post_id>
-		<wp:post_date>2015-08-17 15:44:52</wp:post_date>
-		<wp:post_date_gmt>2015-08-17 15:44:52</wp:post_date_gmt>
-		<wp:comment_status>closed</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>hot-dog</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>lunch_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[3]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>lunch_date</wp:meta_key>
-			<wp:meta_value><![CDATA[20150820]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_lunch_date</wp:meta_key>
-			<wp:meta_value><![CDATA[field_55d0cf14dc516]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Example</title>
-		<link>http://localhost/newsletter/example/</link>
-		<pubDate>Mon, 17 Aug 2015 16:14:36 +0000</pubDate>
-		<dc:creator><![CDATA[6th_grade_alex]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/?post_type=newsletter&#038;p=136</guid>
-		<description></description>
-		<content:encoded><![CDATA[Example]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>136</wp:post_id>
-		<wp:post_date>2015-08-17 16:14:36</wp:post_date>
-		<wp:post_date_gmt>2015-08-17 16:14:36</wp:post_date_gmt>
-		<wp:comment_status>closed</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>example</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>newsletter</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>classroom</wp:meta_key>
-			<wp:meta_value><![CDATA[134]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_classroom</wp:meta_key>
-			<wp:meta_value><![CDATA[field_55ccf7cd2627f]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>featured_image</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_featured_image</wp:meta_key>
-			<wp:meta_value><![CDATA[field_55ccf94ffe48f]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Hot Dog</title>
-		<link>http://localhost/lunch/hot-dog-2/</link>
-		<pubDate>Mon, 17 Aug 2015 16:29:14 +0000</pubDate>
-		<dc:creator><![CDATA[6th_grade_alex]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/?post_type=lunch_item&#038;p=139</guid>
-		<description></description>
-		<content:encoded><![CDATA[Side thing]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>139</wp:post_id>
-		<wp:post_date>2015-08-17 16:29:14</wp:post_date>
-		<wp:post_date_gmt>2015-08-17 16:29:14</wp:post_date_gmt>
-		<wp:comment_status>closed</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>hot-dog-2</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>lunch_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>lunch_date</wp:meta_key>
-			<wp:meta_value><![CDATA[20150821]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_lunch_date</wp:meta_key>
-			<wp:meta_value><![CDATA[field_55d0cf14dc516]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Hello world!</title>
-		<link>http://localhost/hello-world/</link>
-		<pubDate>Fri, 10 Apr 2015 18:18:33 +0000</pubDate>
-		<dc:creator><![CDATA[alex]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/?p=1</guid>
-		<description></description>
-		<content:encoded><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1</wp:post_id>
-		<wp:post_date>2015-04-10 18:18:33</wp:post_date>
-		<wp:post_date_gmt>2015-04-10 18:18:33</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>hello-world</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
-		<wp:comment>
-			<wp:comment_id>1</wp:comment_id>
-			<wp:comment_author><![CDATA[Mr WordPress]]></wp:comment_author>
-			<wp:comment_author_email></wp:comment_author_email>
-			<wp:comment_author_url>https://wordpress.org/</wp:comment_author_url>
-			<wp:comment_author_IP></wp:comment_author_IP>
-			<wp:comment_date>2015-04-10 18:18:33</wp:comment_date>
-			<wp:comment_date_gmt>2015-04-10 18:18:33</wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[Hi, this is a comment.
-To delete a comment, just log in and view the post&#039;s comments. There you will have the option to edit or delete them.]]></wp:comment_content>
-			<wp:comment_approved>1</wp:comment_approved>
-			<wp:comment_type></wp:comment_type>
-			<wp:comment_parent>0</wp:comment_parent>
-			<wp:comment_user_id>0</wp:comment_user_id>
-		</wp:comment>
-	</item>
-	<item>
 		<title>#spslomaha</title>
 		<link>http://localhost/spslomaha/</link>
 		<pubDate>Sun, 16 Aug 2015 18:26:45 +0000</pubDate>
@@ -2710,13 +3153,135 @@ To delete a comment, just log in and view the post&#039;s comments. There you wi
 		</wp:postmeta>
 	</item>
 	<item>
+		<title>We went on a Field Trip</title>
+		<link>http://localhost/newsletter/we-went-on-a-field-trip-2/</link>
+		<pubDate>Mon, 17 Aug 2015 15:41:06 +0000</pubDate>
+		<dc:creator><![CDATA[mr_linderman]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=newsletter&#038;p=131</guid>
+		<description></description>
+		<content:encoded><![CDATA[It Was cool]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>131</wp:post_id>
+		<wp:post_date>2015-08-17 15:41:06</wp:post_date>
+		<wp:post_date_gmt>2015-08-17 15:41:06</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>we-went-on-a-field-trip-2</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>newsletter</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[3]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>classroom</wp:meta_key>
+			<wp:meta_value><![CDATA[128]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_classroom</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55ccf7cd2627f]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>featured_image</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_featured_image</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55ccf94ffe48f]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Example</title>
+		<link>http://localhost/newsletter/example/</link>
+		<pubDate>Mon, 17 Aug 2015 16:14:36 +0000</pubDate>
+		<dc:creator><![CDATA[6th_grade_alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?post_type=newsletter&#038;p=136</guid>
+		<description></description>
+		<content:encoded><![CDATA[Example]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>136</wp:post_id>
+		<wp:post_date>2015-08-17 16:14:36</wp:post_date>
+		<wp:post_date_gmt>2015-08-17 16:14:36</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>example</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>newsletter</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>classroom</wp:meta_key>
+			<wp:meta_value><![CDATA[134]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_classroom</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55ccf7cd2627f]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>featured_image</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_featured_image</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55ccf94ffe48f]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Hello world!</title>
+		<link>http://localhost/hello-world/</link>
+		<pubDate>Fri, 10 Apr 2015 18:18:33 +0000</pubDate>
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/?p=1</guid>
+		<description></description>
+		<content:encoded><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1</wp:post_id>
+		<wp:post_date>2015-04-10 18:18:33</wp:post_date>
+		<wp:post_date_gmt>2015-04-10 18:18:33</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>hello-world</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+		<wp:comment>
+			<wp:comment_id>1</wp:comment_id>
+			<wp:comment_author><![CDATA[Mr WordPress]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url>https://wordpress.org/</wp:comment_author_url>
+			<wp:comment_author_IP></wp:comment_author_IP>
+			<wp:comment_date>2015-04-10 18:18:33</wp:comment_date>
+			<wp:comment_date_gmt>2015-04-10 18:18:33</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Hi, this is a comment.
+To delete a comment, just log in and view the post&#039;s comments. There you will have the option to edit or delete them.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+			<wp:comment_user_id>0</wp:comment_user_id>
+		</wp:comment>
+	</item>
+	<item>
 		<title>For Parents</title>
 		<link>http://localhost/for-parents/</link>
 		<pubDate>Sun, 16 Aug 2015 18:41:07 +0000</pubDate>
 		<dc:creator><![CDATA[alex]]></dc:creator>
 		<guid isPermaLink="false">http://localhost/?page_id=114</guid>
 		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
+		<content:encoded><![CDATA[awdfasdfa]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>114</wp:post_id>
 		<wp:post_date>2015-08-16 18:41:07</wp:post_date>
@@ -2737,6 +3302,14 @@ To delete a comment, just log in and view the post&#039;s comments. There you wi
 		<wp:postmeta>
 			<wp:meta_key>_wp_page_template</wp:meta_key>
 			<wp:meta_value><![CDATA[page-parents.php]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>principal_words</wp:meta_key>
+			<wp:meta_value><![CDATA[asdfasdf]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_principal_words</wp:meta_key>
+			<wp:meta_value><![CDATA[field_55d34d7c10280]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
