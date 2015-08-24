@@ -48,6 +48,22 @@
     </svg>
   </div>
 
+  <div class="container">
+    <ul class="features">
+      <li>Proud history – founded in 1956, fully accredited, over 6,000 alumni</li>
+      <li>Pre-K through 8th grade</li>
+      <li>Affordable tuition</li>
+      <li>Before and after school Extended Care program</li>
+      <li>Small class size – average class is 22 students</li>
+      <li>Dedicated, trained faculty – 37% have master’s degrees</li>
+      <li>Diverse student body, ethnically and socioeconomically</li>
+      <li>Strong Catholic faith foundation – liturgical celebrations are an integral part of our school life; 85% of students move onto Catholic High School.</li>
+      <li>Academic excellence & emotional well-being – high achieving students are challenged by the curriculum and special programs; individual needs of students are met through an adapted curriculum; counselors and mentors are available to students who need them. </li>
+      <li>Extensive family involvement – strong parent involvement through volunteerism.</li>
+      <li>Modern facilities – computer labs integrated into the curriculum</li>
+    </ul>
+  </div>
+
   <div class="color_band_headline">
     <h3 class="band_headline">Voices of SPSL</h3>
     <svg class="color_band" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

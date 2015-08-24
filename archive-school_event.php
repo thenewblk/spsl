@@ -27,7 +27,6 @@
           )
         );
         $post_count = 0;
-  // $featured_event = new WP_Query($args);
 
 ?>
 
@@ -45,6 +44,9 @@
             </g>
           </svg>
         </div>
+        <?php $url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); $url = $url['0']; if ($url) { ?>
+        <img class="featured_event_image" src="<?php echo $url ?>" />
+        <?php } ?>
         <h3 class="featured_event_date"><?php $date = new DateTime(get_field('event_date')); echo $date->format('l, F d Y'); ?></h3>
         <div class="featured_event_content">
           <h4 class="lunch_main"><?php echo get_the_title(); ?></h4>
@@ -54,7 +56,6 @@
     </div>
 <?php endwhile; wp_reset_query(); ?>
 
-<div class="featured_lunch_break"></div>
   <?php
     if (isset( $_GET['week'] )) {
       $week = $_GET['week'];
@@ -192,6 +193,18 @@
 
     ?>
     <div class="container">
+      <div class="calendar_week_wrapper">
+        <?php if ($week == 2 ) { ?>
+          <a class="prev_week" href="/school-calendar/"><span class="left_triangle"></span></a>
+        <?php } else if ($week < 2 ){ ?>
+        <?php } else { ?>
+          <a class="prev_week" href="/school-calendar/?week=<?php echo $week - 2 ?>"><span class="left_triangle"></span></a>
+        <?php } ?>
+        <span class="this_date">Week Of: <?php $date = new DateTime($monday); echo $date->format('F d'); ?></span>
+        <a class="next_week" href="/school-calendar/?week=<?php echo $week ?>"><span class="right_triangle"></span></a>
+      </div>
+    </div>
+    <div class="container">
       <div class="lunch_item">
         <div class="lunch_date">
           <p class="weekday"><?php $date = new DateTime($monday); echo $date->format('l'); ?></p>
@@ -293,18 +306,3 @@
 
     </div>
   <?php wp_reset_query(); ?>
-
-    <div class="next_week_wrapper">
-      <div class="next_week"><a href="/school-calendar/?week=<?php echo $week ?>">Next Week</a></div>
-    </div>
-      <?php if ($week == 2 ) { ?>
-    <div class="prev_week_wrapper">
-      <div class="prev_week"><a href="/school-calendar/">Previous Week</a></div>
-    </div>
-      <?php } else if ($week < 2 ){ ?>
-      <?php } else { ?>
-    <div class="prev_week_wrapper">
-      <div class="prev_week"><a href="/school-calendar/?week=<?php echo $week - 2 ?>">Previous Week</a></div>
-    </div>
-    <?php } ?>
-    <div class="clearfix"></div>

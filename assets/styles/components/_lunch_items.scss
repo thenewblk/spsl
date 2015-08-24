@@ -3,12 +3,17 @@
   .lunch_date {
     border-radius: 10px;
     overflow: hidden;
-    width: 150px;
+    width: 100px;
     display: inline-block;
     background: black;
     .weekday {
       background: $gold;
       text-align: center;
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.4;
+      margin-bottom: 0;
     }
     .content {
       background: black;
@@ -16,10 +21,13 @@
       .month {
         text-transform: uppercase;
         text-align: center;
-            line-height: 1;
+        line-height: 1;
+        font-size: 15px;
+        margin-bottom: 0;
+        margin-top: 5px;
       }
       .day {
-        font-size: 75px;
+        font-size: 50px;
         text-align: center;
             line-height: 1;
       }
@@ -183,4 +191,59 @@
       border-left-color: transparent;
     }
   }
+}
+
+.calendar_week_wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: $dark;
+  color: white;
+  border-bottom: $gold 10px solid;
+  text-align: center;
+
+  .prev_week, .next_week {
+    flex: 0 75px;
+    background: $red;
+    display: flex;
+    transition: 0.15s ease-out;
+
+    .right_triangle {
+      width: 0;
+    	height: 0;
+    	border-top: 15px solid transparent;
+    	border-bottom: 15px solid transparent;
+    	border-left: 30px solid white;
+      display: block;
+      margin: auto;
+    }
+    .left_triangle {
+      width: 0;
+    	height: 0;
+    	border-top: 15px solid transparent;
+    	border-bottom: 15px solid transparent;
+    	border-right: 30px solid white;
+      display: block;
+      margin: auto;
+    }
+    &:hover {
+      background: $gold;
+    }
+  }
+  .this_date {
+    flex: 1;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+  }
+}
+
+.features {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.centered {
+  text-align: center;
+  margin: 0;
 }

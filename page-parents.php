@@ -49,7 +49,40 @@
       </g>
     </svg>
   </div>
-  {DASHBOARD}
+
+  <p>What is this page? Explain here in 20 words.</p>
+  <p>We are also a school with a vision for the future, embracing new technologies</p>
+  <p>and a forward-thinking approach to education.</p>
+  <div class="dashboard_buttons">
+    <div class="dashboard_button_wrapper">
+      <a href="#" class="dashboard_button dark"><span class="slim_wrapper">Power School</span></a>
+      <p>Check your balance. Add money. <br />Power up and go to school.</p>
+    </div>
+    <div class="dashboard_button_wrapper">
+      <a href="#" class="dashboard_button gold"><span class="slim_wrapper">Annual Handbook</span></a>
+      <p>Check your balance. Add money. <br />Power up and go to school.</p>
+    </div>
+    <div class="dashboard_button_wrapper">
+      <a href="#" class="dashboard_button red"><span class="slim_wrapper">Financial</span></a>
+      <p>Check your balance. Add money. <br />Power up and go to school.</p>
+    </div>
+    <div class="dashboard_button_wrapper">
+      <a href="#" class="dashboard_button dark"><span class="slim_wrapper">Uniforms / Spiritwear</span></a>
+      <p>Check your balance. Add money. <br />Power up and go to school.</p>
+    </div>
+    <div class="dashboard_button_wrapper">
+      <a href="#" class="dashboard_button gold"><span class="slim_wrapper">Parent Resources</span></a>
+      <p>Check your balance. Add money. <br />Power up and go to school.</p>
+    </div>
+    <div class="dashboard_button_wrapper">
+      <a href="#" class="dashboard_button red"><span class="slim_wrapper">Preschool / Pre-K Program</span></a>
+      <p>Check your balance. Add money. <br />Power up and go to school.</p>
+    </div>
+    <div class="dashboard_button_wrapper">
+      <a href="#" class="dashboard_button dark"><span class="slim_wrapper">Extended Care Program</span></a>
+      <p>Check your balance. Add money. <br />Power up and go to school.</p>
+    </div>
+  </div>
   <div class="color_band_headline">
     <h3 class="band_headline">Tools</h3>
     <svg class="color_band" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
