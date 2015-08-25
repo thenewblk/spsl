@@ -256,7 +256,7 @@ function homework() {
 		'has_archive'         => true,
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
-    'capability_type'     => array('classroom', 'classrooms'),
+    'capability_type'     => array('homework', 'homeworks'),
     'map_meta_cap'        => true,
 	);
 	register_post_type( 'homework', $args );
@@ -300,7 +300,7 @@ function newsletter() {
 		'has_archive'         => true,
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
-    'capability_type'     => array('classroom', 'classrooms'),
+    'capability_type'     => array('homework', 'homeworks'),
     'map_meta_cap'        => true,
 	);
 	register_post_type( 'newsletter', $args );
@@ -527,6 +527,50 @@ function psp_add_teacher_caps() {
 			 $role->add_cap( 'delete_private_classrooms' );
 			 $role->add_cap( 'delete_published_classrooms' );
 			 $role->add_cap( 'delete_others_classrooms' );
+
+	}
+}
+
+function spsl_add_hw_teacher() {
+	remove_role('hw_teacher');
+ 	add_role(	'hw_teacher',
+            'Teacher with Homework',
+            array(
+                'read' => true,
+                'edit_posts' =>false,
+                'delete_posts' => false,
+                'publish_posts' => false,
+                'upload_files' => true,
+            )
+        );
+   }
+
+add_action( 'init', __NAMESPACE__ . '\\spsl_add_hw_teacher' );
+
+add_action('admin_init', __NAMESPACE__ . '\\psp_add_hw_teacher_caps');
+
+function psp_add_hw_teacher_caps() {
+
+	// Add the roles you'd like to administer the custom post types
+	$roles = array('hw_teacher','editor','administrator');
+
+	// Loop through each role and assign capabilities
+	foreach($roles as $the_role) {
+
+			 $role = get_role($the_role);
+
+			 $role->add_cap( 'read' );
+			 $role->add_cap( 'read_homework');
+			 $role->add_cap( 'read_private_homeworks' );
+			 $role->add_cap( 'edit_homework' );
+			 $role->add_cap( 'edit_homeworks' );
+			 $role->add_cap( 'edit_others_homeworks' );
+			 $role->add_cap( 'edit_published_homeworks' );
+			 $role->add_cap( 'publish_homeworks' );
+			 $role->add_cap( 'publish_others_homeworks' );
+			 $role->add_cap( 'delete_private_homeworks' );
+			 $role->add_cap( 'delete_published_homeworks' );
+			 $role->add_cap( 'delete_others_homeworks' );
 
 	}
 }

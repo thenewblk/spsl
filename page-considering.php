@@ -12,7 +12,7 @@
 
 
 <div class="container">
-
+  <a class="black_pill_button" href="/schedule-a-tour/">Schedule a Tour</a>
   <?php while (have_posts()) : the_post(); ?>
         <?php the_content(); ?>
   <?php endwhile; ?>
@@ -34,7 +34,7 @@
   <p>We emphasize critical thinking, faith, and service. In addition to a traditional core curriculum, we offer art, music, foreign language and technology classes.</p>
   <p>Serving midtown Omaha, the school also draws from all over the metro area, with some families choosing to travel a considerable distance to send their children here. With over 6,000 alumni, It is not uncommon to find second and even third generation SPSL students. At the same time, we actively recruit new families to the St. Pius X / St. Leo community.</p>
 
-  <img class="full_width" src="<?php echo get_template_directory_uri(); ?>/dist/images/video_placeholder.png" />
+  <div class='embed-container'><iframe src='https://player.vimeo.com/video/109478227' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 
   <div class="color_band_headline">
     <h3 class="band_headline">St. Pius x / St. Leo at a Glance.</h3>
@@ -51,9 +51,9 @@
   <div class="container">
     <ul class="features">
       <li>Proud history – founded in 1956, fully accredited, over 6,000 alumni</li>
-      <li>Pre-K through 8th grade</li>
-      <li>Affordable tuition</li>
-      <li>Before and after school Extended Care program</li>
+      <li>Preschool / Pre-K through 8th grade</li>
+      <li><a href="/financial">Affordable tuition</a></li>
+      <li>Before and after school <a href="/extended-care-program">Extended Care Program</a></li>
       <li>Small class size – average class is 22 students</li>
       <li>Dedicated, trained faculty – 37% have master’s degrees</li>
       <li>Diverse student body, ethnically and socioeconomically</li>
@@ -75,5 +75,15 @@
       </g>
     </svg>
   </div>
+
+  <div class='embed-container'><iframe src='https://player.vimeo.com/video/136860089' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+
+  <div class='embed-container'><iframe src='https://player.vimeo.com/video/136860088' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+
+  <div class='embed-container'><iframe src='https://player.vimeo.com/video/136860087' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+
+  <div class='embed-container'><iframe src='https://player.vimeo.com/video/136860086' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+
+
 
 </div>

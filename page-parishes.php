@@ -22,7 +22,8 @@
       </g>
     </svg>
   </div>
-  <img class="full_width" src="<?php echo get_template_directory_uri(); ?>/dist/images/video_placeholder.png" />
+
+  <div class='embed-container'><iframe src='https://player.vimeo.com/video/136860090' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 
   <p>The school is supported by two parishes - St. Pius X and St. Leo.  Here are the links for these two parishes. Fr. Eckley and Fr. Loecker welcome you to browse their respective parish’s web sites. You will find Mass schedules, information about each parish and ideas on how to get involved. The parishes also offer various sports programs. Please check out the links above to find out more about thes programs and how to get your child involved.</p>
   <p>The school is supported by two parishes - St. Pius X and St. Leo.  Here are the links for these two parishes. Fr. Eckley and Fr. Loecker welcome you to browse their respective parish’s web sites.  </p>

@@ -10,8 +10,9 @@
 </div>
 
 <div class="container">
+  <?php if (get_field('principal_words') ) { ?>
   <div class="color_band_headline">
-    <h3 class="band_headline">Principal Words</h3>
+    <h3 class="band_headline">A Word from the Principal</h3>
     <svg version="1.1" class="color_band" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        viewBox="0 0 1043 135.3" enable-background="new 0 0 1043 135.3" xml:space="preserve" preserveAspectRatio="none">
       <g>
@@ -22,7 +23,9 @@
     </svg>
   </div>
 
-    <?php the_field('principal_words'); ?>
+    <?php the_field('principal_words'); } ?>
+
+    <?php if (get_field('daily_announcements') ) { ?>
     <div class="color_band_headline">
       <h3 class="band_headline">Daily Announcements</h3>
       <svg version="1.1" class="color_band" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -35,7 +38,7 @@
       </svg>
     </div>
 
-  <?php the_field('daily_announcements'); ?>
+  <?php the_field('daily_announcements'); } ?>
 
 
   <div class="color_band_headline">
@@ -49,10 +52,10 @@
       </g>
     </svg>
   </div>
-
-  <p>What is this page? Explain here in 20 words.</p>
-  <p>We are also a school with a vision for the future, embracing new technologies</p>
-  <p>and a forward-thinking approach to education.</p>
+  <div class="padded_copy">
+    <p class="centered">Parents and families of SPSL students represent a vibrant community. Your ongoing involvement in the school is critical to our mission of academic excellence and service to others.</p>  
+    <p class="centered">This is your dashboard, with quick and easy access to all of the various tools on the site to keep you informed and engaged in the school. </p>
+  </div>
   <div class="dashboard_buttons">
     <div class="dashboard_button_wrapper">
       <a href="#" class="dashboard_button dark"><span class="slim_wrapper">Power School</span></a>
@@ -93,6 +96,13 @@
         <polygon fill="#10202B" points="20.8,0 1386.5,43.6 1386.5,123.1 0,123.1 	"/>
       </g>
     </svg>
+  </div>
+  <div class="circle_button_wrapper">
+    <a href="/lunch/" class="circle_button red"><span class="slim_wrapper">Lunch Menu</span></a>
+    <a href="/school-calendar/" class="circle_button gold"><span class="slim_wrapper">School Calendar</span></a>
+    <a href="/classroom/" class="circle_button dark"><span class="slim_wrapper">Classrooms</span></a>
+    <a href="/clubs-sports-and-activities/" class="circle_button red"><span class="slim_wrapper">Clubs, Sports & Activities</span></a>
+    <a href="/library/" class="circle_button gold"><span class="slim_wrapper">Library</span></a>
   </div>
 </div>
 <?php endwhile; ?>

@@ -22,6 +22,9 @@
 @import "layouts/_pages";
 @import "layouts/_posts";
 
+@import "common/_media_queries";
+
 html, body {
   height: 100%;
+  overflow-x: hidden;
 }

@@ -20,7 +20,17 @@
       init: function() {
 
         $('.menu_button').click( function(){
-          $('.menu_sidebar').toggleClass("open"); 
+          $('.menu_sidebar').toggleClass("open");
+          $('.menu_overlay').toggleClass("open");
+        });
+
+        $('.close_menu_button').click( function(){
+          $('.menu_sidebar').toggleClass("open");
+          $('.menu_overlay').toggleClass("open");
+        });
+        $('.menu_overlay').click( function(){
+          $('.menu_sidebar').toggleClass("open");
+          $('.menu_overlay').toggleClass("open");
         });
 
       },

@@ -4,13 +4,38 @@
  */
 ?>
 
+<?php
+  $now = new DateTime();
+  $featured_lunch = new WP_Query(
+          array(
+            'post_type' => 'lunch_item',
+            'posts_per_page' => 1,
+            'orderby' => 'meta_value_num',
+            'order'   => 'ASC',
+            'meta_key'  => 'lunch_date',
+            'meta_query' => array(
+                array(
+                    'key' => 'lunch_date',
+                    'value' => $now->format('Ymd'),
+                )
+              )
+          )
+        );
+        $post_count = 0;
+
+?>
+
 
   <div class="stained_glass">
     <div class="top_glass">
       <div class="left_glass">
         <div class="left_top">
           <a href="/lunch" class="pane lunch">
-            <span class="pane_content">What's for Lunch?</span>
+            <span class="pane_content">What's for Lunch?
+              <?php if ($featured_lunch->have_posts()) { while ( $featured_lunch->have_posts() ) : $featured_lunch->the_post(); ?>
+                <br />Today: <?php echo get_the_title(); ?>
+              <?php endwhile; } ?>
+            </span>
             <span class="overlay"><span class="overlay_border"></span></span>
           </a>
         </div>
@@ -43,7 +68,7 @@
               </a>
             </div>
             <div class="right_right_bottom">
-              <a href="/classrooms/" class="pane classrooms">
+              <a href="/classroom/" class="pane classrooms">
                 <span class="pane_content">Classrooms</span>
                 <span class="overlay"><span class="overlay_border"></span></span>
               </a>

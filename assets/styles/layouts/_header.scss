@@ -9,33 +9,33 @@ header.banner {
   .brand {
     img {
       width: 75px;
+      padding: 12px 0 0;
     }
+  }
+  a {
+    border: none;
   }
   .mission {
     color: white;
     .mission_headline, .mission_copy {
-          display: inline-block;
-          vertical-align: middle;
     }
     .mission_copy {
       font-size: 14px;
     }
     .mission_headline {
       margin: 0px 15px;
-      line-height: 75px;
-      font-size: 50px;
+      font-size: 40px;
+      line-height: 0.64;
     }
   }
   .menu_button {
     cursor: pointer;
     position : absolute;
-    top: 0;
-    right: 0;
+    right: 30px;
     color: white;
-    line-height: 75px;
-    height: 75px;
+    position: absolute;
+    bottom: 7px;
     margin: 0;
-    width: 300px;
     text-align: center;
     font-size: 25px;
     z-index: 1;
@@ -51,11 +51,42 @@ header.banner {
     }
   }
   .main_header {
-    display: table;
     width: 100%;
+    padding: 0 15px;
     .brand, .mission, .menu_button {
-      display: table-cell;
+      display: inline-block;
+      vertical-align: bottom;
     }
+  }
+}
+.close_menu_button {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  line-height: 15px;
+  cursor: pointer;
+  transition: .15s ease-in-out;
+  font-family: 'Cardenio-Modern';
+  &:hover {
+    color: $red;
+  }
+}
+
+.menu_overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  z-index: -1;
+  position: fixed;
+  background: rgba(0,0,0,0.9);
+
+  &.open {
+    opacity: 0.8;
+    z-index: 11;
   }
 }
 
@@ -63,14 +94,18 @@ header.banner {
   position: absolute;
   opacity: 0;
   right: 0;
+  top: 0;
   width: 300px;
-  top: -1000%;
+  height: 100%;
+  right: -300px;
   transition: 0.15s ease-out;
+  z-index: 11;
+  padding-top: 100px;
   &.open {
     display: block;
     opacity: 1;
     background: $dark;
-    top: 75px;
+    right: 0;
     max-width: 100%;
   }
   .nav {
@@ -78,7 +113,7 @@ header.banner {
     font-family: 'Cardenio-Modern';
     font-size: 25px;
     li {
-      border-bottom: white solid 1px;
+      border-bottom: rgba(255,255,255,0.5) solid 1px;
       margin: 0 15px;
       &:hover, &:focus, &:active {
         background: $dark;
@@ -91,10 +126,21 @@ header.banner {
       color: white;
       transition: 0.15s ease-out;
       padding: 3px 15px;
+      border: none;
       &:hover, &:focus, &:active {
         color: $gold;
         background: $dark;
       }
+    }
+  }
+}
+
+
+.admin-bar {
+  .menu_sidebar {
+    padding-top: 132px;
+    .close_menu_button {
+      top: 32px;
     }
   }
 }

@@ -1,4 +1,4 @@
-body.home {
+.home_stained_wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -6,20 +6,19 @@ body.home {
     flex: 0 0 100px;
     .main_header {
       .brand img {
-        width: 100px;
-        padding: 5px 0 0;
+        width: 110px;
+        padding: 12px 0 0;
       }
     }
     .menu_button {
-      line-height: 100px;
-      height: 100px;
+
     }
     .menu_sidebar.open {
       top: 100px;
     }
     .mission {
       .mission_headline {
-        line-height: 100px;
+          line-height: 32px;
       }
     }
   }
@@ -128,6 +127,7 @@ body.home {
     overflow: hidden;
     padding: 20px;
     text-align: center;
+    border: none;
 
     &.lunch {
       background-image: url(../images/Lunch_small.jpg);

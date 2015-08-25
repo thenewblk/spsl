@@ -1,0 +1,119 @@
+@media (max-width: 768px) {
+  .mission {
+    display: none !important;
+  }
+}
+@media (max-width: 480px) {
+  body.home {
+    min-height: none;
+    display: block;
+    header.banner {
+      height: 100px;
+    }
+  }
+  .stained_glass {
+
+      .top_glass {
+        flex: 0;
+        display: block;
+        flex-direction: column;
+        .left_glass {
+          flex: 0;
+          display: block;
+          flex-direction: column;
+          .left_top, .left_middle, .left_bottom {
+            display: block;
+          }
+          .left_top {
+            flex: 0;
+          }
+          .left_middle {
+            flex: 0;
+          }
+          .left_bottom {
+            flex: 0;
+          }
+        }
+        .right_glass {
+          flex: 0;
+          display: block;
+          flex-direction: column;
+          .right_top, .right_bottom {
+            flex: 0;
+            display: block;
+            flex-direction: column;
+          }
+          .right_top {
+            .right_left {
+              flex: 0;
+            }
+            .right_right {
+              display: block;
+              flex: 0;
+              display: block;
+              flex-direction: column;
+              .right_right_top, .right_right_bottom {
+                flex: 0;
+                display: block;
+              }
+              .right_right_top {
+              }
+              .right_right_bottom {
+              }
+            }
+          }
+          .right_bottom {
+            background: orange;
+
+            .right_bottom_left, .right_bottom_right {
+              display: block;
+            }
+            .right_bottom_left {
+              flex: 0;
+            }
+            .right_bottom_right {
+              flex: 0;
+            }
+          }
+        }
+      }
+      .bottom_glass {
+        display: block;
+        flex: 0;
+        flex-direction: column;
+        .bottom_left, .bottom_middle, .bottom_right {
+          display: block;
+        }
+        .bottom_left {
+          flex: 0;
+        }
+        .bottom_middle {
+          flex: 0;
+        }
+        .bottom_right {
+          flex: 0;
+        }
+      }
+  }
+
+  .right_footer {
+    display: none;
+  }
+  .left_footer {
+    position: relative;
+    float: none;
+    display: flex;
+    flex-direction: row;
+    top: auto;
+    left: auto;
+    align-items: center;
+    height: 50px;
+  }
+  .map_link, .phone_link {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}

@@ -1,5 +1,7 @@
 footer.content-info {
   background: $dark;
+  position: relative;
+  height: 50px;
   .icons {
     display: table;
     margin: auto;
@@ -10,6 +12,72 @@ footer.content-info {
       line-height: 50px;
       img {
         width: 100%;
+      }
+    }
+  }
+  a {
+    transition: 0.15s ease-out;
+    border: none;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.left_footer {
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  .map_icon, .phone_icon {
+    height: 30px;
+  }
+}
+
+
+.right_footer {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  .awaken_greatness {
+    height: 35px;
+  }
+}
+
+.phone_link {
+  color: white;
+  font-size: 20px;
+  &:hover {
+    color: $gold;
+  }
+}
+.sub-footer {
+  background: $dark;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  h4 {
+    font-size: 40px;
+  }
+  .newblk {
+    float: right;
+    font-family: 'Cardenio-Modern';
+    padding: 10px;
+    margin: 0;
+    transition: .3s ease-out;
+    -webkit-font-smoothing: subpixel-antialiased;
+    opacity: 0.7;
+    &:hover {
+      transform: rotate(1deg);
+      opacity: 1;
+    }
+    a {
+      color: white;
+      border: transparent 2px solid;
+      padding: 5px;
+      -webkit-font-smoothing: subpixel-antialiased;
+      &:hover {
+        border: white 2px dashed;
+        transform: rotate(1deg);
       }
     }
   }

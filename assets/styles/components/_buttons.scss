@@ -1,4 +1,4 @@
-.slim_button, .dashboard_button {
+.slim_button, .dashboard_button, .circle_button {
   font-family: 'Cardenio-Modern';
   color: white;
   display: table;
@@ -88,5 +88,72 @@ a {
     border-radius: 12px;
     min-width: auto;
     width: 100%;
+  }
+}
+.circle_button_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .circle_button {
+    .slim_wrapper {
+      min-width: auto;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.club_headline {
+  font-size: 45px;
+}
+
+.club_copy {
+  margin: 0;
+  font-size: 15px;
+}
+
+.black_pill_button {
+  background: $dark;
+  color: white;
+  border-radius: 15px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.15s ease-out;
+  padding-left: 50px;
+  position: relative;
+  float: right;
+
+  &:hover {
+    color: white;
+    background: $red;
+  }
+
+  &:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 14px solid $gold;
+    margin: auto;
+    position: absolute;
+    left: 20px;
+    top: 7px;
+  }
+}
+a {
+  color: black;
+  padding: 0 5px;
+  border-bottom: $gold 2px solid;
+  transition: 0.15s ease-out;
+
+  &:hover {
+    border-bottom: $red 2px solid;
   }
 }

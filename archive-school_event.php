@@ -194,6 +194,7 @@
     ?>
     <div class="container">
       <div class="calendar_week_wrapper">
+        <div class="calendar_week_angle"></div>
         <?php if ($week == 2 ) { ?>
           <a class="prev_week" href="/school-calendar/"><span class="left_triangle"></span></a>
         <?php } else if ($week < 2 ){ ?>
@@ -205,7 +206,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="lunch_item">
+      <div class="lunch_item school_event">
         <div class="lunch_date">
           <p class="weekday"><?php $date = new DateTime($monday); echo $date->format('l'); ?></p>
           <span class="content">
@@ -214,12 +215,16 @@
           </span>
         </div>
         <div class="lunch_content">
-          <?php while ($monday_loop->have_posts()) : $monday_loop->the_post(); ?>
-          <h4 class="lunch_main"><?php echo get_the_title($post); ?></h4>
-          <?php endwhile;   ?>
+          <?php if ($monday_loop->have_posts()) { ?>
+            <?php while ($monday_loop->have_posts()) : $monday_loop->the_post(); ?>
+            <h4 class="lunch_main<?php if (get_field('featured') == true) { ?> featured<?php } ?>"><?php echo get_the_title($post); ?></h4>
+            <?php endwhile;   ?>
+          <?php } else { ?>
+            <h4 class="lunch_main">No Events Scheduled Yet.</h4>
+          <?php } ?>
         </div>
       </div>
-      <div class="lunch_item">
+      <div class="lunch_item school_event">
         <div class="lunch_date">
           <p class="weekday"><?php $date = new DateTime($tuesday); echo $date->format('l'); ?></p>
           <span class="content">
@@ -228,12 +233,16 @@
           </span>
         </div>
         <div class="lunch_content">
-          <?php while ($tuesday_loop->have_posts()) : $tuesday_loop->the_post(); ?>
-          <h4 class="lunch_main"><?php echo get_the_title($post); ?></h4>
-          <?php endwhile;   ?>
+          <?php if ($tuesday_loop->have_posts()) { ?>
+            <?php while ($tuesday_loop->have_posts()) : $tuesday_loop->the_post(); ?>
+            <h4 class="lunch_main<?php if (get_field('featured') == true) { ?> featured<?php } ?>"><?php echo get_the_title($post); ?></h4>
+            <?php endwhile;   ?>
+          <?php } else { ?>
+            <h4 class="lunch_main">No Events Scheduled Yet.</h4>
+          <?php } ?>
         </div>
       </div>
-      <div class="lunch_item">
+      <div class="lunch_item school_event">
         <div class="lunch_date">
           <p class="weekday"><?php $date = new DateTime($wednesday); echo $date->format('l'); ?></p>
           <span class="content">
@@ -242,12 +251,16 @@
           </span>
         </div>
         <div class="lunch_content">
-          <?php while ($wednesday_loop->have_posts()) : $wednesday_loop->the_post(); ?>
-          <h4 class="lunch_main"><?php echo get_the_title($post); ?></h4>
-          <?php endwhile;   ?>
+          <?php if ($wednesday_loop->have_posts()) { ?>
+            <?php while ($wednesday_loop->have_posts()) : $wednesday_loop->the_post(); ?>
+            <h4 class="lunch_main<?php if (the_field('featured') == true) { ?> featured<?php } ?>"><?php echo get_the_title($post); ?></h4>
+            <?php endwhile;   ?>
+          <?php } else { ?>
+            <h4 class="lunch_main">No Events Scheduled Yet.</h4>
+          <?php } ?>
         </div>
       </div>
-      <div class="lunch_item">
+      <div class="lunch_item school_event">
         <div class="lunch_date">
           <p class="weekday"><?php $date = new DateTime($thursday); echo $date->format('l'); ?></p>
           <span class="content">
@@ -256,12 +269,16 @@
           </span>
         </div>
         <div class="lunch_content">
-          <?php while ($thursday_loop->have_posts()) : $thursday_loop->the_post(); ?>
-          <h4 class="lunch_main"><?php echo get_the_title($post); ?></h4>
-          <?php endwhile;   ?>
+          <?php if ($thursday_loop->have_posts()) { ?>
+            <?php while ($thursday_loop->have_posts()) : $thursday_loop->the_post(); ?>
+            <h4 class="lunch_main<?php if (get_field('featured') == true) { ?> featured<?php } ?>"><?php echo get_the_title($post); ?></h4>
+            <?php endwhile;   ?>
+          <?php } else { ?>
+            <h4 class="lunch_main">No Events Scheduled Yet.</h4>
+          <?php } ?>
         </div>
       </div>
-      <div class="lunch_item">
+      <div class="lunch_item school_event">
         <div class="lunch_date">
           <p class="weekday"><?php $date = new DateTime($friday); echo $date->format('l'); ?></p>
           <span class="content">
@@ -270,12 +287,16 @@
           </span>
         </div>
         <div class="lunch_content">
-          <?php while ($friday_loop->have_posts()) : $friday_loop->the_post(); ?>
-          <h4 class="lunch_main"><?php echo get_the_title($post); ?></h4>
-          <?php endwhile;   ?>
+          <?php if ($friday_loop->have_posts()) { ?>
+            <?php while ($friday_loop->have_posts()) : $friday_loop->the_post(); ?>
+            <h4 class="lunch_main<?php if (get_field('featured') == true) { ?> featured<?php } ?>"><?php echo get_the_title($post); ?></h4>
+            <?php endwhile;   ?>
+          <?php } else { ?>
+            <h4 class="lunch_main">No Events Scheduled Yet.</h4>
+          <?php } ?>
         </div>
       </div>
-      <div class="lunch_item">
+      <div class="lunch_item school_event">
         <div class="lunch_date">
           <p class="weekday"><?php $date = new DateTime($saturday); echo $date->format('l'); ?></p>
           <span class="content">
@@ -284,12 +305,16 @@
           </span>
         </div>
         <div class="lunch_content">
-          <?php while ($saturday_loop->have_posts()) : $saturday_loop->the_post(); ?>
-          <h4 class="lunch_main"><?php echo get_the_title($post); ?></h4>
-          <?php endwhile;   ?>
+          <?php if ($saturday_loop->have_posts()) { ?>
+            <?php while ($saturday_loop->have_posts()) : $saturday_loop->the_post(); ?>
+            <h4 class="lunch_main<?php if (get_field('featured') == true) { ?> featured<?php } ?>"><?php echo get_the_title($post); ?></h4>
+            <?php endwhile;   ?>
+          <?php } else { ?>
+            <h4 class="lunch_main">No Events Scheduled Yet.</h4>
+          <?php } ?>
         </div>
       </div>
-      <div class="lunch_item">
+      <div class="lunch_item school_event">
         <div class="lunch_date">
           <p class="weekday"><?php $date = new DateTime($sunday); echo $date->format('l'); ?></p>
           <span class="content">
@@ -298,9 +323,13 @@
           </span>
         </div>
         <div class="lunch_content">
-          <?php while ($sunday_loop->have_posts()) : $sunday_loop->the_post(); ?>
-          <h4 class="lunch_main"><?php echo get_the_title($post); ?></h4>
-          <?php endwhile;   ?>
+          <?php if ($sunday_loop->have_posts()) { ?>
+            <?php while ($sunday_loop->have_posts()) : $sunday_loop->the_post(); ?>
+            <h4 class="lunch_main<?php if (get_field('featured') == true) { ?> featured<?php } ?>"><?php echo get_the_title($post); ?></h4>
+            <?php endwhile;   ?>
+          <?php } else { ?>
+            <h4 class="lunch_main">No Events Scheduled Yet.</h4>
+          <?php } ?>
         </div>
       </div>
 

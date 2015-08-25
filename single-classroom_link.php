@@ -58,6 +58,7 @@
 
     <div class="teacher_links">
       <a class="teacher_link cm" href="/classroom/<?php echo get_page_uri( get_field('classroom') ); ?>"><?php echo get_the_title( get_field('classroom')); ?> Home</a>
+      <?php if (get_the_title( get_field('classroom')) == "Library"){ ?><a class="teacher_link cm" href="/library/">Library Resources<?php } ?>
       <?php $loop = new WP_Query(
           array(
             'post_type' => 'classroom_link',

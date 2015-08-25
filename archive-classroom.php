@@ -467,7 +467,42 @@
             <?php endwhile; ?>
             </div>
           <?php } ?>
-
+          <?php
+            $grade = get_page_by_title( 'Spanish', OBJECT, 'grade' );
+            $loop = new WP_Query(
+                array(
+                  'post_type' => 'classroom',
+                  'posts_per_page' => -1,
+                  'orderby' => 'meta_value_num',
+                  'order'   => 'ASC',
+                  'meta_key'  => 'grade',
+                  'meta_query' => array(
+                    array(
+                        'key' => 'grade',
+                        'value' => $grade->ID,
+                    )
+                  )
+                 )
+               );
+              ?>
+              <?php if ( $loop->have_posts() ) {  ?>
+              <div class="grade">
+                <h3 class="grade_title cm">Spanish </h3>
+              <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                <?php
+                  $username = get_field('teacher', get_the_ID());
+                  if ($username) {
+                    $userID = $username['ID'];
+                    $teacher_title = get_the_author_meta( 'title', $userID);
+                    $teacher_name = get_the_author_meta( 'display_name', $userID);
+                ?>
+                    <a class="classroom" href="<?php echo esc_url( get_permalink() ); ?>"><?php echo $teacher_title; ?> <?php echo $teacher_name; ?> - <?php echo get_the_title(); ?></a>
+                  <?php } else { ?>
+                      <a class="classroom" href="<?php echo esc_url( get_permalink() ); ?>"><?php echo get_the_title(); ?></a>
+                  <?php } ?>
+              <?php endwhile; ?>
+              </div>
+            <?php } ?>
     </div>
     <div class="right_grades">
       <?php

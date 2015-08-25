@@ -28,7 +28,7 @@
       </g>
     </svg>
   </div>
-  <h1 style="text-align: center; margin: 150px;"> {{{{{{{PHOTO GALLERY}}}}}}} </h1>
+  <?php the_field('gallery'); ?>
   <div class="color_band_headline">
     <h3 class="band_headline">For Alumni</h3>
     <svg class="color_band" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -42,7 +42,9 @@
   </div>
   <p><b>SPSL has over 6,000 alumni, dating back to our first graduating class in 1957.</b></p>
   <p>Our students go on to do great things, in ways large and small, dedicated to lifetime learning and service to others. If you’re an alumni, you are still a vital part of the SPSL community. We want to hear what you’ve been up to! </p>
-  <a href="#" class="slim_button dark"><span class="slim_wrapper">View Alumni Newsletter</span></a>
+  <?php if (get_field('alumni_newsletter')) {?>
+  <a href="<?php echo get_field('alumni_newsletter')['url'] ?>" class="slim_button dark"><span class="slim_wrapper">View Alumni Newsletter</span></a>
+  <?php } ?>
   <a href="#" class="slim_button red"><span class="slim_wrapper">Update Alumni Profile</span></a>
-  <a href="#" class="slim_button dark"><span class="slim_wrapper">Ways to Support</span></a>
+  <a href="/ways-to-support/" class="slim_button dark"><span class="slim_wrapper">Ways to Support</span></a>
 </div>

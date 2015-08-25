@@ -40,6 +40,9 @@
     .lunch_copy, .lunch_copy p {
       line-height: 1;
     }
+    .lunch_main.featured {
+      color: $gold;
+    }
   }
   &.featured {
     .lunch_date {
@@ -57,10 +60,37 @@
       }
     }
   }
+  &.school_event {
+    .lunch_date {
+      transition: 0.15s ease-out;
+    }
+    &:hover {
+      .lunch_date {
+        background: $red;
+        .content {
+          background: $red;
+        }
+      }
+    }
+  }
+
 }
 .featured_lunch_break {
   background: $gold;
   height: 15px;
+}
+
+.featured_event_date {
+  text-transform: uppercase;
+  font-weight: 200;
+  text-align: center;
+  font-size: 30px;
+}
+
+.featured_event_content {
+  width: 600px;
+  max-width: 100%;
+  margin: auto;
 }
 
 .next_week_wrapper, .prev_week_wrapper {
@@ -201,12 +231,27 @@
   color: white;
   border-bottom: $gold 10px solid;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 
+  .calendar_week_angle {
+    height: 50px;
+    background: white;
+    position: absolute;
+    width: 110%;
+    transform: rotate(1deg);
+    top: -30px;
+  }
+
+  .prev_week {
+    margin-top: -13px;
+  }
   .prev_week, .next_week {
     flex: 0 75px;
     background: $red;
     display: flex;
     transition: 0.15s ease-out;
+    padding-top: 25px;
 
     .right_triangle {
       width: 0;
@@ -233,13 +278,14 @@
   .this_date {
     flex: 1;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
+    padding-top: 25px;
   }
 }
 
 .features {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
 }
 

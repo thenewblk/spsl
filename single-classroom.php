@@ -90,9 +90,9 @@
       <?php
         $newsletter_loop = new WP_Query( array(
                   'post_type' => 'newsletter',
-                  'posts_per_page' => 1,
-                  'orderby' => 'meta_value_num',
-                  'order'   => 'ASC',
+                  'posts_per_page' => 3,
+                  'orderby' => 'date',
+                  'order'   => 'DESC',
                   'meta_key'  => 'classroom',
                   'meta_query' => array(
                     array(
@@ -118,6 +118,7 @@
     		<?php while ( $newsletter_loop->have_posts() ) : $newsletter_loop->the_post(); ?>
                 <div class="newsletter_item">
                   <h2 class="centered title"><?php the_title(); ?></h2>
+                  <h3 class="centered"><?php the_date(); ?></h3>
                   <?php echo get_the_post_thumbnail(  ); ?>
                   <div class="centered_text"><?php the_content(); ?></div>
                 </div>
@@ -159,7 +160,8 @@
       <?php } ?>
     </div>
     <div class="teacher_links">
-      <a class="teacher_link cm" href="#"><?php echo get_the_title( get_field('classroom')); ?> Home</a>
+      <a class="teacher_link cm" href="javascript:void(0);"><?php echo get_the_title( get_field('classroom')); ?> Home</a>
+      <?php if (get_the_title() == "Library"){ ?><a class="teacher_link cm" href="/library/">Library Resources<?php } ?>
       <?php $loop = new WP_Query(
           array(
             'post_type' => 'classroom_link',

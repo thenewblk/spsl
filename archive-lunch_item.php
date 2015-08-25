@@ -22,7 +22,6 @@
           )
         );
         $post_count = 0;
-  // $featured_lunch = new WP_Query($args);
 
 ?>
 
@@ -53,6 +52,7 @@
 <?php endwhile; wp_reset_query(); ?>
 
 <div class="featured_lunch_break"></div>
+  <a class="black_pill_button" href="#">Power School</a>
   <?php
     if (isset( $_GET['week'] )) {
       $week = $_GET['week'];

@@ -10,7 +10,9 @@
 </div>
 
 <div class="container">
-  <p class="centered">We’ll periodically select great photos and posts to spotlight.</p>
-  <p class="centered">We’ll also be giving out special prize packages to fans.</p>
-  <p class="centered">Stay tuned for specific promotions throughout the year.</p>
+  <div class="padded_copy">
+    <p class="centered">We’ll periodically select great photos and posts to spotlight.</p>
+    <p class="centered">We’ll also be giving out special prize packages to fans.</p>
+    <p class="centered">Stay tuned for specific promotions throughout the year.</p>
+  </div>
 </div>
