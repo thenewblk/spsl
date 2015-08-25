@@ -15,9 +15,7 @@
 <?php } ?>
 <div class="sub-footer">
   <h4 class="cm">Mission Statement</h4>
-  <p>
-    Small class size – average class is 22 students<br />
-    Strong Catholic faith foundation – liturgical celebrations are an integral part of our school life; 85% of students move onto Catholic High School.
-  </p>
+  <p>St. Pius X / St. Leo School is  a diverse community forming students<br />
+  in the Catholic faith to excel in academics and service to others.</p>
   <p class="newblk"><a href="http://thenewblk.com">Made with the kids over at the New BLK</a></p>
 </div>
